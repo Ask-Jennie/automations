@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ProductGalleryComponent } from './product-gallery/product-gallery.component';
+import { AskJennieComponent } from './ask-jennie/ask-jennie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ProductGalleryComponent,
+    AskJennieComponent
   ],
   imports: [
     BrowserModule,
