@@ -1,0 +1,98 @@
+.card1{
+
+    margin-left: 250px;
+  
+
+}
+
+.card2{
+
+    margin-right: 250px;
+
+}
+
+.small{
+
+    font-size: 11px;
+    color: grey;
+    
+}
+
+.lg-card{
+
+    margin-top: 120px;
+   
+    background-color: rgba(253, 253, 253, 0.815);
+    padding-bottom: 60px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.btn
+{
+    border: solid 1px blue;
+   
+}
+
+.copybtn{
+
+    border: solid 1px blue;
+    padding: 4px 10px 8px 10px;
+    background-color: #fff;
+}
+@media screen and (max-width: 600px) {
+    .card1{
+
+        margin-left: 0px;
+      
+    
+    }
+    .lg-card{
+
+        margin-top: 120px;
+       
+        background-color: rgba(253, 253, 253, 0.815);
+        padding-bottom: 0px;
+        /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .card2{
+
+        margin-right: 0px;
+    
+    }
+  }
+
+  @media screen and (max-width: 947px) {
+    .card1{
+
+        margin-left: 0px;
+      
+    
+    }
+  }
+
+  @media screen and (max-width: 947px) {
+    .card2{
+
+        margin-right: 0px;
+    
+    }
+
+    .lg-card{
+
+        margin-top: 0px;
+       
+        background-color: rgba(253, 253, 253, 0.815);
+        padding-bottom: 60px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    
+  }
+
+
