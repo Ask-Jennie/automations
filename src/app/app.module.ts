@@ -10,6 +10,7 @@ import { ProductGalleryComponent } from './product-gallery/product-gallery.compo
 import { AskJennieComponent } from './ask-jennie/ask-jennie.component';
 import { CardComponent } from './card/card.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './login/login.component';
     ProductGalleryComponent,
     AskJennieComponent,
     CardComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
