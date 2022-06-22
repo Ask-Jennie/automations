@@ -12,6 +12,7 @@ import { CardComponent } from './card/card.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { SignupWithImgComponent } from './signup-with-img/signup-with-img.component';
+import { SigninWithImgComponent } from './signin-with-img/signin-with-img.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SignupWithImgComponent } from './signup-with-img/signup-with-img.compon
     CardComponent,
     LoginComponent,
     SignupComponent,
-    SignupWithImgComponent
+    SignupWithImgComponent,
+    SigninWithImgComponent
   ],
   imports: [
     BrowserModule,
