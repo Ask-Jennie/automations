@@ -11,6 +11,7 @@ import { AskJennieComponent } from './ask-jennie/ask-jennie.component';
 import { CardComponent } from './card/card.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { SignupWithImgComponent } from './signup-with-img/signup-with-img.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SignupComponent } from './signup/signup.component';
     AskJennieComponent,
     CardComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    SignupWithImgComponent
   ],
   imports: [
     BrowserModule,
