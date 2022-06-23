@@ -13,6 +13,10 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { SignupWithImgComponent } from './signup-with-img/signup-with-img.component';
 import { SigninWithImgComponent } from './signin-with-img/signin-with-img.component';
+import { SimpleRightHeaderComponent } from './simple-right-header/simple-right-header.component';
+import { SimpleCenterHeaderComponent } from './simple-center-header/simple-center-header.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { SigninWithImgComponent } from './signin-with-img/signin-with-img.compon
     LoginComponent,
     SignupComponent,
     SignupWithImgComponent,
-    SigninWithImgComponent
+    SigninWithImgComponent,
+    SimpleRightHeaderComponent,
+    SimpleCenterHeaderComponent,
+   
+  
   ],
   imports: [
     BrowserModule,
