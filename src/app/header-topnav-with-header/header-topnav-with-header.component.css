@@ -1,4 +1,5 @@
-.card-content{
+
+#card-content{
 
     background-color: #fff;
 
@@ -7,7 +8,17 @@
     
 }
 
-.nav-item{
+.nav-link{
 
-    font-size: 20px;
+    font-size: 22px;
 }
+.form-control{
+
+    font-size: 25px;
+}
+
+.btn{
+
+    font-size: 25px;
+}
+

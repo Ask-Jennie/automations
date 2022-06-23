@@ -7,7 +7,12 @@
     
 }
 
-.nav-item{
+.nav-link{
+
+    font-size: 20px;
+}
+
+.btn{
 
     font-size: 20px;
 }

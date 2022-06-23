@@ -15,6 +15,12 @@ import { SignupWithImgComponent } from './signup-with-img/signup-with-img.compon
 import { SigninWithImgComponent } from './signin-with-img/signin-with-img.component';
 import { SimpleRightHeaderComponent } from './simple-right-header/simple-right-header.component';
 import { SimpleCenterHeaderComponent } from './simple-center-header/simple-center-header.component';
+import { HeaderWithRightbuttonComponent } from './header-with-rightbutton/header-with-rightbutton.component';
+import { HeaderButtonWithSearchComponent } from './header-button-with-search/header-button-with-search.component';
+import { HeaderSearchWithProfileComponent } from './header-search-with-profile/header-search-with-profile.component';
+import { HeaderSearchWithDropdownprofileComponent } from './header-search-with-dropdownprofile/header-search-with-dropdownprofile.component';
+import { DoubleheaderComponent } from './doubleheader/doubleheader.component';
+import { HeaderTopnavWithHeaderComponent } from './header-topnav-with-header/header-topnav-with-header.component';
 
 
 
@@ -31,6 +37,12 @@ import { SimpleCenterHeaderComponent } from './simple-center-header/simple-cente
     SigninWithImgComponent,
     SimpleRightHeaderComponent,
     SimpleCenterHeaderComponent,
+    HeaderWithRightbuttonComponent,
+    HeaderButtonWithSearchComponent,
+    HeaderSearchWithProfileComponent,
+    HeaderSearchWithDropdownprofileComponent,
+    DoubleheaderComponent,
+    HeaderTopnavWithHeaderComponent,
    
   
   ],
