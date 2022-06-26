@@ -25,7 +25,7 @@
           <div class="ui-sidebar">
           <ul>
             <li class="list-item" *ngFor="let tag of tags; let j = index">
-                <a href="javascript:void(0);" (click)="showTagItem(tag)">{{tag}}</a>
+                <a href="javascript:void(0);" (click)="showTagItem(tag)">{{tag.tag}} ({{tag.count}})</a>
             </li>            
           </ul>
         </div>
