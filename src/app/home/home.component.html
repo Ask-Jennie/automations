@@ -30,7 +30,7 @@
           <div class="ui-sidebar">
           <ul>
             <li class="list-item" *ngFor="let tag of tags; let j = index">
-                <a href="javascript:void(0);" (click)="showTagItem(tag)">{{tag}}</a>
+                <a href="javascript:void(0);" (click)="showTagItem(tag.tag)">{{tag.tag}} ({{tag.count}})</a>
             </li>            
           </ul>
         </div>
@@ -53,17 +53,32 @@
                     <span><i class="fas fa-layer-group"></i></span>Component</span>
                 </div>
                 <div class="">
-                  <div class="btn-group">
-                    <button type="button" class="btn ">Preview
-                      <span><i class="fas fa-eye"></i></span>
-                    </button>
-                    <button type="button" class="btn">Code
-                      <span><i class="fas fa-code"></i></span>
-                    </button>
-                  </div>
+                  <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-bs-toggle="pill" href="#preview">Preview
+                        <span><i class="fas fa-eye"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="pill" href="#code">Code
+                        <span><i class="fas fa-code"></i></span></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <img class="ui-lib-image" [src]="gallery.app_image">
+              
+            
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="preview" class="container tab-pane active"><br>
+                  <img class="ui-lib-image" [src]="gallery.app_image">
+                </div>
+                <div id="code" class="container tab-pane fade"><br>
+                  <h3>Code</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+             
               <!-- <div class="card">
                   <div class="card-body ">
                       <p class="pt-5">05 . Pricing</p>
