@@ -1,0 +1,46 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+}
+.navbar-blue{
+    background-color: #3f51b5!important;
+}
+
+.page-nav {
+    background-color: white;
+    padding: 10px auto;
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.search-area {
+    background-color: white;
+    padding: 10px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.sidenavbar {
+    padding: 10px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+    background: white;
+    margin-top: 30px;
+}
+
+.sidenavbar li{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+
+}

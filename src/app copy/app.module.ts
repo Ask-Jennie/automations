@@ -21,10 +21,6 @@ import { HeaderSearchWithProfileComponent } from './header-search-with-profile/h
 import { HeaderSearchWithDropdownprofileComponent } from './header-search-with-dropdownprofile/header-search-with-dropdownprofile.component';
 import { DoubleheaderComponent } from './doubleheader/doubleheader.component';
 import { HeaderTopnavWithHeaderComponent } from './header-topnav-with-header/header-topnav-with-header.component';
-import { GroupListComponent } from './group-list/group-list.component';
-import { ServicesThreeColumnComponent } from './services-three-column/services-three-column.component';
-import { PortfolioSixGridComponent } from './portfolio-six-grid/portfolio-six-grid.component';
-import { TeamThreeColumnComponent } from './team-three-column/team-three-column.component';
 
 
 
@@ -47,10 +43,6 @@ import { TeamThreeColumnComponent } from './team-three-column/team-three-column.
     HeaderSearchWithDropdownprofileComponent,
     DoubleheaderComponent,
     HeaderTopnavWithHeaderComponent,
-    GroupListComponent,
-    ServicesThreeColumnComponent,
-    PortfolioSixGridComponent,
-    TeamThreeColumnComponent,
    
   
   ],
