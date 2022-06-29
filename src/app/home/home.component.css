@@ -45,11 +45,15 @@
 .component-link .link, .component-link .count{
     color: #536387;
 }
+
 .sidebar-subtitle{
     color: #4b4c52;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    font-size: .8rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .display-area {
     padding-top: 50px;
@@ -136,6 +140,8 @@ li:last-child{
 .list-item a {
     text-decoration: none;
     color: rgb(13, 23, 42);  
+    font-size: .8rem;
+    font-weight: 700;
 }
 .category {
     display: block;
