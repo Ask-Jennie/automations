@@ -30,8 +30,8 @@
             <div class="category-dropmenu mb-3">
               <h5 class="sidebar-subtitle">Category</h5>
             <select class="form-select" aria-label="Default select example">
-              <option selected>Angular UI Lib</option>
-              <option value="1">Angular Automation</option>
+              <option selected>&#xf042; Angular UI Lib</option>
+              <option value="1"><span><i class="fab fa-angular"></i></span>Angular Automation</option>
             </select>
             <br>
             </div>
@@ -56,18 +56,17 @@
       <!-- end of left sidebar -->
 
       <div class="col-md-9">
+      <div class="main-content">
       <section class="card-content" *ngFor="let gallery of ui_gallery; let i = index">
           <div class="container lg-card">
               <h4 class="fw-bold pt-5">{{gallery.app_title}}</h4>
               <p>{{gallery.description}}</p>
-              <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+              <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
                 <div class="">
                   <span class="badge rounded-pill jennie-badge">
-                    <span style="color: red;"><i class="fab fa-angular"></i></span>Angular-UI-Lib</span>
+                    <span style="color: red;margin-right: 3px;"><i class="fab fa-angular"></i></span>Angular-UI-Lib</span>
                   <span class="badge rounded-pill jennie-badge">
-                    <span style="color: #806cf9;"><i class="fab fa-bootstrap"></i></span>Bootstrap</span>
-                  <!-- <span class="badge rounded-pill jennie-badge">
-                    <span><i class="fas fa-layer-group"></i></span>Component</span> -->
+                    <span style="color: #806cf9;margin-right: 3px;"><i class="fab fa-bootstrap"></i></span>Bootstrap</span>
                 </div>
                 <div class="">
                   <ul class="nav nav-pills preview-code" role="tablist">
@@ -85,7 +84,7 @@
 
               <!-- Tab panes -->
               <div class="tab-content">
-                <div id="preview-{{i}}" class="container tab-pane active"><br>
+                <div id="preview-{{i}}" class="container tab-pane active component-img">
                   <img class="ui-lib-image" [src]="gallery.app_image">
                 </div>
                 <div id="code-{{i}}" class="container tab-pane fade"><br>
@@ -99,6 +98,7 @@
               </div>
           </div>
       </section>
+      </div>
       </div>
     </div>
 </div>
