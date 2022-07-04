@@ -1,0 +1,24 @@
+{
+  "_id": 52,
+  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1656774678-6978521.png",
+  "app_name": "signup",
+  "app_title": "simple signup",
+  "app_description": "simple signup component",
+  "tag": "SimpleSignupPage",
+  "stack": "angular",
+  "type": "angular-ui-lib",
+  "automation_conf": {
+    "css_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/signup/signup.component.css",
+    "html_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/signup/signup.component.html",
+    "ts_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/signup/signup.component.ts",
+    "sample_html_file_path": "",
+    "sample_ts_file_path": "",
+    "sample_css_file_path": ""
+  },
+  "dependencies": [
+    "bootstrap"
+  ],
+  "is_active": false,
+  "created_on": "2022-07-02T15:11:19.173190Z",
+  "created_by": 3
+}

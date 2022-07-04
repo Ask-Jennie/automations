@@ -1,0 +1,24 @@
+{
+  "_id": 51,
+  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1656695382-4856873.png",
+  "app_name": "signin-with-img",
+  "app_title": "Signin with image ",
+  "app_description": "signin componets with image",
+  "tag": "SigninPage",
+  "stack": "angular",
+  "type": "angular-ui-lib",
+  "automation_conf": {
+    "css_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/signin-with-img/signin-with-img.component.css",
+    "html_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/signin-with-img/signin-with-img.component.html",
+    "ts_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/signin-with-img/signin-with-img.component.ts",
+    "sample_html_file_path": "",
+    "sample_ts_file_path": "",
+    "sample_css_file_path": ""
+  },
+  "dependencies": [
+    "bootstrap"
+  ],
+  "is_active": false,
+  "created_on": "2022-07-01T17:09:42.839347Z",
+  "created_by": 3
+}
