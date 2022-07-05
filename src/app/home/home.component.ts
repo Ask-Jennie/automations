@@ -12,9 +12,22 @@ export class HomeComponent implements OnInit {
   tags = []
   counts = {}
   filter_tag = "";
+
+  url = "https://api.ask-jennie.com/v1/automation/TYPE/list/";
+  current_url = "https://api.ask-jennie.com/v1/automation/angular-ui-lib/list/";
+  type_automation = "angular-ui-lib";
+
+  ui_libs = [
+    "angular-ui-lib"
+  ];
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.update_list();
+  }
+
+  update_list() {
     this.get_ui_gallery().subscribe(
       data => {
         this.all_ui_gallery = data["payload"]["data"];
@@ -23,6 +36,8 @@ export class HomeComponent implements OnInit {
       }
     )
   }
+
+  
 
   show_data() {
     this.ui_gallery = [];
@@ -39,7 +54,7 @@ export class HomeComponent implements OnInit {
   }
 
   get_ui_gallery() {
-    let req = this.http.get("https://api.ask-jennie.com/v1/automation/angular-ui-lib/list/");
+    let req = this.http.get(this.current_url);
     return req;
   }
 
@@ -51,5 +66,11 @@ export class HomeComponent implements OnInit {
 
   add_filter(tag_name) {
     this.filter_tag = tag_name;
+  }
+
+  onTypeChanged(event) {    
+    this.current_url = this.url.replace("TYPE", this.type_automation);
+    console.log(this.type_automation, this.current_url, event);
+    this.update_list();
   }
 }
