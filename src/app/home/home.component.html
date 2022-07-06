@@ -56,17 +56,16 @@
       <!-- end of left sidebar -->
 
       <div class="col-md-9">
+      <div class="main-content">
       <section class="card-content" *ngFor="let gallery of ui_gallery; let i = index">
           <div class="container lg-card">
               <h4 class="fw-bold pt-5">{{gallery.app_title}}</h4>              
               <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
                 <div class="">
                   <span class="badge rounded-pill jennie-badge">
-                    <span style="color: red;"><i class="fab fa-angular"></i></span>Angular-UI-Lib</span>
+                    <span style="color: red;margin-right: 3px;"><i class="fab fa-angular"></i></span>Angular-UI-Lib</span>
                   <span class="badge rounded-pill jennie-badge">
-                    <span style="color: #806cf9;"><i class="fab fa-bootstrap"></i></span>Bootstrap</span>
-                  <!-- <span class="badge rounded-pill jennie-badge">
-                    <span><i class="fas fa-layer-group"></i></span>Component</span> -->
+                    <span style="color: #806cf9;margin-right: 3px;"><i class="fab fa-bootstrap"></i></span>Bootstrap</span>
                 </div>
                 <div class="" *ngIf="type_automation === 'angular-ui-lib'">
                   <ul class="nav nav-pills preview-code" role="tablist">
@@ -107,6 +106,7 @@
               </div>
           </div>
       </section>
+      </div>
       </div>
     </div>
 </div>
