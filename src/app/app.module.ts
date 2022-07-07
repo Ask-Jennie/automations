@@ -8,13 +8,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ProductGalleryComponent } from './product-gallery/product-gallery.component';
 import { AskJennieComponent } from './ask-jennie/ask-jennie.component';
+import { ProfileComponent } from './profile/profile.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProductGalleryComponent,
-    AskJennieComponent
+    AskJennieComponent,
+    ProfileComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,

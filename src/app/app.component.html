@@ -1,2 +1,18 @@
-<app-home></app-home>
-<!-- <app-product-gallery></app-product-gallery> -->
+
+<!-- Header/Navigation -->
+<nav class="jennie-navbar">  
+    <label class="logo"> 
+      <img src="https://dashboard.ask-jennie.com/assets/header_logo.png" style="height: 60px;margin: 10px;">
+    </label>
+    <ul>
+    <li><a routerLink="/automation" routerLinkActive="active" ariaCurrentWhenActive="page">Automation</a></li>
+    <li><a routerLink="/feedback" routerLinkActive="active" ariaCurrentWhenActive="page">Feeback Query</a></li>
+    <li><a routerLink="/profile" routerLinkActive="active" ariaCurrentWhenActive="page">My Profile</a></li>
+      
+      <li>
+      <button class="btn btn-danger">Logout<i class="fas fa-sign-out-alt" style="margin-left: 10px;"></i></button>
+    </li>
+    </ul>
+  </nav>
+  <!-- end of header/navigation -->
+<router-outlet></router-outlet>
