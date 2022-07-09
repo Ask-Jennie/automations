@@ -1,0 +1,31 @@
+{
+  "_id": 63,
+  "created_by": {
+    "email": "payal@ask-jennie.com",
+    "fullname": "Payal Gangwar",
+    "city": "Noida",
+    "bio": "Software Developer",
+    "is_active": 1
+  },
+  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1656936179-0924032.png",
+  "app_name": "login",
+  "app_title": "login page",
+  "app_description": "login component",
+  "tag": "LoginPage",
+  "stack": "angular",
+  "type": "angular-ui-lib",
+  "automation_conf": {
+    "css_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/login/login.component.css",
+    "html_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/login/login.component.html",
+    "ts_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/login/login.component.ts",
+    "sample_html_file_path": "",
+    "sample_ts_file_path": "",
+    "sample_css_file_path": ""
+  },
+  "dependencies": [
+    "bootstrap"
+  ],
+  "is_active": false,
+  "created_on": "2022-07-04T12:02:59.393639Z",
+  "updated_on": "2022-07-04T12:02:59.393692Z"
+}

@@ -1,0 +1,31 @@
+{
+  "_id": 72,
+  "created_by": {
+    "email": "payal@ask-jennie.com",
+    "fullname": "Payal Gangwar",
+    "city": "Noida",
+    "bio": "Software Developer",
+    "is_active": 1
+  },
+  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1657125625-2970793.png",
+  "app_name": "table",
+  "app_title": "table ",
+  "app_description": "table component",
+  "tag": "Table",
+  "stack": "angular",
+  "type": "angular-ui-lib",
+  "automation_conf": {
+    "css_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/table/table.component.css",
+    "html_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/table/table.component.html",
+    "ts_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/table/table.component.ts",
+    "sample_html_file_path": "",
+    "sample_ts_file_path": "",
+    "sample_css_file_path": ""
+  },
+  "dependencies": [
+    "bootstrap"
+  ],
+  "is_active": false,
+  "created_on": "2022-07-06T16:40:25.597425Z",
+  "updated_on": "2022-07-06T16:40:25.597466Z"
+}

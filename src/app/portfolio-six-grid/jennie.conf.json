@@ -1,0 +1,31 @@
+{
+  "_id": 73,
+  "created_by": {
+    "email": "payal@ask-jennie.com",
+    "fullname": "Payal Gangwar",
+    "city": "Noida",
+    "bio": "Software Developer",
+    "is_active": 1
+  },
+  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1657126869-669676.png",
+  "app_name": "portfolio-six-grid",
+  "app_title": "Portfolio",
+  "app_description": "portfolio component",
+  "tag": "Portfolio",
+  "stack": "angular",
+  "type": "angular-ui-lib",
+  "automation_conf": {
+    "css_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/portfolio-six-grid/portfolio-six-grid.component.css",
+    "html_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/portfolio-six-grid/portfolio-six-grid.component.html",
+    "ts_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/portfolio-six-grid/portfolio-six-grid.component.ts",
+    "sample_html_file_path": "",
+    "sample_ts_file_path": "",
+    "sample_css_file_path": ""
+  },
+  "dependencies": [
+    "bootstrap"
+  ],
+  "is_active": false,
+  "created_on": "2022-07-06T17:01:09.992117Z",
+  "updated_on": "2022-07-06T17:01:09.992170Z"
+}

@@ -25,6 +25,10 @@ import { GroupListComponent } from './group-list/group-list.component';
 import { ServicesThreeColumnComponent } from './services-three-column/services-three-column.component';
 import { PortfolioSixGridComponent } from './portfolio-six-grid/portfolio-six-grid.component';
 import { TeamThreeColumnComponent } from './team-three-column/team-three-column.component';
+import { CardFourGridsComponent } from './card-four-grids/card-four-grids.component';
+import { TableComponent } from './table/table.component';
+import { TableWithTagsComponent } from './table-with-tags/table-with-tags.component';
+import { TableWithProgressbarComponent } from './table-with-progressbar/table-with-progressbar.component';
 
 
 
@@ -51,9 +55,12 @@ import { TeamThreeColumnComponent } from './team-three-column/team-three-column.
     ServicesThreeColumnComponent,
     PortfolioSixGridComponent,
     TeamThreeColumnComponent,
-   
-  
+    CardFourGridsComponent,
+    TableComponent,
+    TableWithTagsComponent,
+    TableWithProgressbarComponent,
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
