@@ -1,0 +1,31 @@
+{
+  "_id": 80,
+  "created_by": {
+    "email": "payal@ask-jennie.com",
+    "fullname": "Payal Gangwar",
+    "city": "Noida",
+    "bio": "Software Developer",
+    "is_active": 1
+  },
+  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1657376957-6709812.png",
+  "app_name": "invoice",
+  "app_title": "Invoice",
+  "app_description": "invoice components",
+  "tag": "Invoice",
+  "stack": "angular",
+  "type": "angular-ui-lib",
+  "automation_conf": {
+    "css_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/invoice/invoice.component.css",
+    "html_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/invoice/invoice.component.html",
+    "ts_file_path": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/invoice/invoice.component.ts",
+    "sample_html_file_path": "",
+    "sample_ts_file_path": "",
+    "sample_css_file_path": ""
+  },
+  "dependencies": [
+    "bootstrap"
+  ],
+  "is_active": false,
+  "created_on": "2022-07-09T14:29:18.380482Z",
+  "updated_on": "2022-07-09T14:29:18.380522Z"
+}
