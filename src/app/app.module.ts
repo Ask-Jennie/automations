@@ -29,6 +29,9 @@ import { CardFourGridsComponent } from './card-four-grids/card-four-grids.compon
 import { TableComponent } from './table/table.component';
 import { TableWithTagsComponent } from './table-with-tags/table-with-tags.component';
 import { TableWithProgressbarComponent } from './table-with-progressbar/table-with-progressbar.component';
+import { InvoiceComponent } from './invoice/invoice.component';
+import { TransactionComponent } from './transaction/transaction.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -59,6 +62,9 @@ import { TableWithProgressbarComponent } from './table-with-progressbar/table-wi
     TableComponent,
     TableWithTagsComponent,
     TableWithProgressbarComponent,
+    InvoiceComponent,
+    TransactionComponent,
+    ProfileComponent,
   ],
   
   imports: [
