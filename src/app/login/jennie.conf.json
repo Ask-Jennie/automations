@@ -1,5 +1,5 @@
 {
-  "_id": 63,
+  "_id": 93,
   "created_by": {
     "email": "payal@ask-jennie.com",
     "fullname": "Payal Gangwar",
@@ -7,9 +7,9 @@
     "bio": "Software Developer",
     "is_active": 1
   },
-  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1656936179-0924032.png",
+  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1657459409-1817133.png",
   "app_name": "login",
-  "app_title": "login page",
+  "app_title": "Login",
   "app_description": "login component",
   "tag": "LoginPage",
   "stack": "angular",
@@ -26,6 +26,6 @@
     "bootstrap"
   ],
   "is_active": false,
-  "created_on": "2022-07-04T12:02:59.393639Z",
-  "updated_on": "2022-07-04T12:02:59.393692Z"
+  "created_on": "2022-07-10T13:19:29.110077Z",
+  "updated_on": "2022-07-10T13:23:29.483533Z"
 }

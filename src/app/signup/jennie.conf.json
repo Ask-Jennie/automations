@@ -1,10 +1,17 @@
 {
-  "_id": 52,
-  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1656774678-6978521.png",
+  "_id": 95,
+  "created_by": {
+    "email": "payal@ask-jennie.com",
+    "fullname": "Payal Gangwar",
+    "city": "Noida",
+    "bio": "Software Developer",
+    "is_active": 1
+  },
+  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1657460437-4373684.png",
   "app_name": "signup",
-  "app_title": "simple signup",
-  "app_description": "simple signup component",
-  "tag": "SimpleSignupPage",
+  "app_title": "SignupPage",
+  "app_description": "signuppage component",
+  "tag": "SignupPage",
   "stack": "angular",
   "type": "angular-ui-lib",
   "automation_conf": {
@@ -19,6 +26,6 @@
     "bootstrap"
   ],
   "is_active": false,
-  "created_on": "2022-07-02T15:11:19.173190Z",
-  "created_by": 3
+  "created_on": "2022-07-10T13:40:37.714402Z",
+  "updated_on": "2022-07-10T13:40:37.714442Z"
 }

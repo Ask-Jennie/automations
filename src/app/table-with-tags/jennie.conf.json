@@ -1,5 +1,5 @@
 {
-  "_id": 79,
+  "_id": 90,
   "created_by": {
     "email": "payal@ask-jennie.com",
     "fullname": "Payal Gangwar",
@@ -7,7 +7,7 @@
     "bio": "Software Developer",
     "is_active": 1
   },
-  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1657370635-9122746.png",
+  "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1657449343-8496127.png",
   "app_name": "table-with-tags",
   "app_title": "Table",
   "app_description": "table components",
@@ -26,6 +26,6 @@
     "bootstrap"
   ],
   "is_active": false,
-  "created_on": "2022-07-09T12:43:56.209993Z",
-  "updated_on": "2022-07-09T12:43:56.210034Z"
+  "created_on": "2022-07-10T10:35:44.581432Z",
+  "updated_on": "2022-07-10T10:35:44.581473Z"
 }
