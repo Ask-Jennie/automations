@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { AuthGuard } from './services/auth.gaurd';
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +10,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { GuideComponent } from './guide/guide.component';
 import { MarkdownModule } from 'ngx-markdown';
+import { SignupWithImgComponent } from './ui-lib/signup-with-img/signup-with-img.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { MarkdownModule } from 'ngx-markdown';
     HomeComponent,
     ProfileComponent,
     FeedbackComponent,
-    GuideComponent
+    GuideComponent,
+    SignupWithImgComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    HttpClientModule,
     FormsModule,
     MarkdownModule.forRoot({ loader: HttpClient }),
   ],
