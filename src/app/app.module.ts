@@ -13,6 +13,8 @@ import { MarkdownModule } from 'ngx-markdown';
 import { SignupWithImgComponent } from './ui-lib/signup-with-img/signup-with-img.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { SigninWithImgComponent } from './ui-lib/signin-with-img/signin-with-img.component';
+import { ShowErrorToastComponent } from './ui-lib/show-error-toast/show-error-toast.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SignupComponent } from './signup/signup.component';
     GuideComponent,
     SignupWithImgComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    SigninWithImgComponent,
+    ShowErrorToastComponent
   ],
   imports: [
     BrowserModule,

@@ -5,11 +5,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SessionmanagerService {
-  BASE_URL = "http://localhost:8081/"
-  LOGIN_ENDPOINT = "v1/login/";
-  SIGNUP_ENDPOINT = "v1/signup/";
-  LOGIN_STATUS_ENDPOINT = "v1/login-status/";
-  STORAGE_KEY = "userinfo";
+  BASE_URL = "https://api.ask-jennie.com/"
+  LOGIN_ENDPOINT = this.BASE_URL + "v1/login/";
+  SIGNUP_ENDPOINT = this.BASE_URL + "v1/signup/";
+  LOGIN_STATUS_ENDPOINT =this.BASE_URL +  "v1/login-status/";
+  STORAGE_KEY = this.BASE_URL + "userinfo";
   constructor(private api:HttpClient) { }
 
   is_logged_in() {
@@ -32,7 +32,7 @@ export class SessionmanagerService {
   }
 
   login(loginDetails:any) {
-    return this.api.post("http://127.0.0.1:8000/v1/login/", loginDetails);
+    return this.api.post(this.LOGIN_ENDPOINT, loginDetails);
   }
 
   signup(signup_details:any) {
