@@ -1,0 +1,38 @@
+.jennie-navbar {
+    background-color: #3396d6;
+    height: 65px;
+    width: 100%;
+    box-shadow: 0px 10px 10px -5px var(--grayishBlue)!important;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.jennie-navbar ul {
+    float: right;
+    margin: 0 20px 0 0;
+}
+.jennie-navbar  ul  li  {
+    display: inline-block;
+    margin: 0 5px;
+}
+.jennie-navbar  ul  li  a  {
+    color: #fff!important;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo {
+    display: inline-block;
+    width: 136px;
+}
+.logo img {
+    width: 100%;
+    background-size: cover;
+    height: auto;
+}
+.navigate-collapse {
+    justify-content: flex-end;
+}

@@ -1,0 +1,19 @@
+<div class="jennie-guide container">
+    <div class="row">
+    <div class="col-lg-3">
+        <ul class="list-group">
+           <li class="list-group-item" *ngFor="let guide of guidemap; let j = index">
+                <a class="guide-link" href="javascript:void(0)" (click)="show_readme(guide.url)">{{guide.title}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-9">
+        <section class="guide-card">
+            <markdown
+                clipboard
+                [src]="link_to_show">
+            </markdown>
+        </section>
+    </div>
+</div>
+</div>

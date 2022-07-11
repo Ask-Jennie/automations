@@ -1,0 +1,96 @@
+<!-- Main Content -->
+<div class="container bg-layout">
+    <div class="row">
+      <!-- Left Sidebar -->
+      <div class="col-md-3"> 
+        <div class="sidebar"> 
+          <div class="category">
+            <!-- <div class="jennie-search mb-3">
+            <h5 class="sidebar-subtitle">Search</h5>
+            <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+            </div> -->
+            <div class="category-dropmenu mb-3">
+              <h5 class="sidebar-subtitle">Category</h5>
+            <select class="form-select" aria-label="Default select example" [(ngModel)]="type_automation" (change)="onTypeChanged($event)">
+              <option value="angular-ui-lib">Angular UI Lib</option>
+              <option value="angular-automations">Angular Automation</option>
+            </select>
+            <br>
+            </div>
+            
+            <div class="clear-filter">
+            <h5 class="sidebar-subtitle">Components</h5>
+            <p class="clear-filter-text" *ngIf="filter_tag !== ''">{{filter_tag}} <a href="#" (click)="filter_tag = ''; show_data()">Clear</a></p>
+            </div>
+          </div>
+          <div class="ui-sidebar">
+          <ul class="components-list">
+            <li class="list-item" *ngFor="let tag of tags; let j = index">
+                <a class="d-flex flex-wrap justify-content-between align-items-center component-link" href="javascript:void(0);" (click)="showTagItem(tag.tag)">
+                  <div class="link">{{tag.tag}}</div>
+                  <div class="count">({{tag.count}})</div>
+                </a>
+            </li>            
+          </ul>
+          </div>
+        </div>      
+      </div>
+      <!-- end of left sidebar -->
+
+      <div class="col-md-9">
+      <div class="main-content">
+      <section class="card-content" *ngFor="let gallery of ui_gallery; let i = index">
+          <div class="container lg-card">
+              <h4 class="fw-bold pt-5">{{gallery.app_title}}</h4>              
+              <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+                <div class="">
+                  <span class="badge rounded-pill jennie-badge">
+                    <span style="color: red;margin-right: 3px;"><i class="fab fa-uikit"></i></span>{{gallery.type}}</span>
+                  <span class="badge rounded-pill jennie-badge">
+                    <span style="color: #806cf9;margin-right: 3px;"><i class="fas fa-tags"></i></span>{{gallery.tag}}</span>
+                </div>
+                <div class="" *ngIf="type_automation === 'angular-ui-lib'">
+                  <ul class="nav nav-pills preview-code" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-bs-toggle="pill" href="#preview-{{i}}">Preview
+                        <span><i class="fas fa-eye"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="pill" href="#code-{{i}}">Code
+                        <span><i class="fas fa-code"></i></span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="" *ngIf="type_automation !== 'angular-ui-lib'">
+                  <ul class="nav nav-pills preview-code" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-bs-toggle="pill" href="#code-{{i}}">Code
+                        <span><i class="fas fa-code"></i></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="preview-{{i}}" class="container tab-pane active component-img"  *ngIf="type_automation === 'angular-ui-lib'" [class.fade]="type_automation !== 'angular-ui-lib'"><br>
+                  <img class="ui-lib-image" [src]="gallery.app_image">
+                </div>
+                <div id="code-{{i}}" class="container tab-pane fade" [class.fade]="type_automation === 'angular-ui-lib'" [class.active]="type_automation !== 'angular-ui-lib'"><br>
+                  <h3>Code</h3>
+                  <pre>jennie angular ui-lib download {{gallery.app_name}}</pre>
+                  <span *ngIf="type_automation === 'angular-ui-lib'">
+                  <p><br><br> Make sure the command is executed inside from angular project, once the command is finished user shall find the module at src/app/ui-lib/{{gallery.app_name}}. The component can be used by adding tag <br><br></p>
+                  <pre>&lt;app-{{gallery.app_name}}&gt;&lt;/app-{{gallery.app_name}}&gt; </pre>
+                  </span>
+                  <p>{{gallery.app_description}}</p>
+                </div>
+              </div>
+              <p class="author"><b>Updated By:</b> {{gallery.created_by.fullname}}</p>
+          </div>
+          
+      </section>
+      </div>
+      </div>
+    </div>
+</div>
