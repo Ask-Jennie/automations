@@ -9,6 +9,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { GuideComponent } from './guide/guide.component';
 import { MarkdownModule } from 'ngx-markdown';
+import {NgxPaginationModule} from 'ngx-pagination';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { MarkdownModule } from 'ngx-markdown';
     GuideComponent
   ],
   imports: [
+    NgxPaginationModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

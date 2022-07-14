@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import { ServiceService } from '../services/service.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -21,10 +22,11 @@ export class HomeComponent implements OnInit {
     "angular-ui-lib"
   ];
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private service: ServiceService) { }
 
   ngOnInit(): void {
     this.update_list();
+    this.getData()
   }
 
   update_list() {
@@ -71,5 +73,19 @@ export class HomeComponent implements OnInit {
     console.log(this.type_automation, this.current_url, event);
     this.update_list();
   }
+
+//pagination
+  p:any;
+  data:any=[];
+  getData() {
+    this.service.getData().subscribe(
+      (data) => {
+        this.data = data["payload"]["data"];
+        console.log(this.data)
+      }
+    );
+  }
+
+  
 }
 

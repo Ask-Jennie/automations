@@ -197,3 +197,12 @@ ul {
     font-size: 0.9rem;
 }
 
+
+.pagination {
+    margin-left: 0;
+    margin-bottom: 2rem ;
+    padding-left: 570px !important;
+    padding-top: 15px !important;
+  
+}
+
