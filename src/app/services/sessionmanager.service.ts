@@ -11,8 +11,15 @@ export class SessionmanagerService {
   LOGIN_STATUS_ENDPOINT =this.BASE_URL +  "v1/login-status/";
   PROFILE_ENDPOINT = this.BASE_URL + "v1/profile/";
   FEEDBACK_ENDPOINT = this.BASE_URL + "v1/feedbacks/";
+  TUTORIALS_ENDPOINT = this.BASE_URL + "v1/tutorials/";
   STORAGE_KEY = this.BASE_URL + "userinfo";
   constructor(private api:HttpClient) { }
+
+  get_auth_header() {
+    let storage_info = localStorage.getItem(this.STORAGE_KEY);
+    let token = JSON.parse(storage_info)["token"];
+    return { 'token': token, 'Content-type': 'application/json'};
+  }
 
   is_logged_in() {
     let storage_info = localStorage.getItem(this.STORAGE_KEY);
@@ -58,12 +65,13 @@ export class SessionmanagerService {
   }
 
   send_feedback(inputData) {
-    let storage_info = localStorage.getItem(this.STORAGE_KEY);
-    let token = JSON.parse(storage_info)["token"];
-    const headers = { 'token': token, 'Content-type': 'application/json'};
-    const body = inputData;
-    return this.api.post<any>(this.FEEDBACK_ENDPOINT, body, { headers });
-    
+    const headers = this.get_auth_header();
+    return this.api.post<any>(this.FEEDBACK_ENDPOINT, inputData, { headers });
+  }
+
+  get_turoails() {
+    const headers = this.get_auth_header();
+    return this.api.get<any>(this.TUTORIALS_ENDPOINT, { headers });
   }
 
 }

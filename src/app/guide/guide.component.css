@@ -8,8 +8,9 @@
     padding: 5px 0;
 }
 .guide-card {
+    margin-left: 40px;
     background-color: #f4f5f7;
-    padding: 20px;
+    padding: 30px;
     border-radius: 6px;
     margin-bottom: 40px;
 }
@@ -22,6 +23,12 @@
     padding: 10px 6px;
 }
 .list-item:hover {
+    background-color: #f4f5f7;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.list-item.active {
     background-color: #f4f5f7;
     cursor: pointer;
     border-radius: 6px;

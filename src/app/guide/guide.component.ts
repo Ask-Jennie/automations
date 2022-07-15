@@ -1,5 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
-import { guidemap } from './guide'
+import { SessionmanagerService } from '../services/sessionmanager.service';
 
 
 @Component({
@@ -9,16 +10,26 @@ import { guidemap } from './guide'
 })
 export class GuideComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sessions: SessionmanagerService) { }
   url = "https://raw.githubusercontent.com/Ask-Jennie/ask-jennie/release/0.6/tutorials/Installing-Jennie.md"
-  guidemap = guidemap;
-  link_to_show = guidemap[0].url;
+  guidemap:any;
+  link_to_show = "";
   ngOnInit(): void {
-    console.log(guidemap);
-    
+    this.get_tutorials();
   }
 
   show_readme(link) {
     this.link_to_show = link;
+    console.log(this.link_to_show);
+  }
+
+  get_tutorials() {
+    this.sessions.get_turoails().subscribe(
+      data => {
+        console.log("Got Tutorials", data);
+        this.guidemap = data["payload"];
+        this.show_readme(this.guidemap[0].url);
+      }
+    )
   }
 }
