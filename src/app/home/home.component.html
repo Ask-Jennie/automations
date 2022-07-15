@@ -40,10 +40,12 @@
     </div>
     <!-- end of left sidebar -->
 
-    <div class="col-md-9">
+    <div class="col-md-9 pt-5">
+      <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
       <div class="main-content">
+        
         <section class="card-content" *ngFor="let gallery of ui_gallery | paginate: 
-        { itemsPerPage: 10, currentPage: p };  let i = index ">
+        { itemsPerPage: 7, currentPage: p };  let i = index ">
           <div class="container lg-card">
             <h4 class="fw-bold pt-5">{{gallery.app_title}}</h4>
             <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
@@ -96,26 +98,9 @@
               </div>
             </div>
             <p class="author"><b>Updated By:</b> {{gallery.created_by.fullname}}</p>
-
-           
           </div>
-
-
-
-          <!-- <div *ngFor="let d of data | paginate: 
-             { itemsPerPage: 1, currentPage: p }">
-            <p>"userId" = {{ d.userId }}</p>
-            <p>"id" = {{ d.id }}</p>
-            <p>"title" = {{ d.title }}</p>
-            <p>"completed" = {{ d.completed }}
-            </p>
-            <hr>
-          </div> -->
-         
-
         </section>
-        <pagination-controls (pageChange)="p = $event" class="pagination">
-        </pagination-controls>
+        <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
       </div>
     </div>
   </div>

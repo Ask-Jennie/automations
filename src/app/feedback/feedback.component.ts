@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-//import { ApiserviceService } from 'src/app/services/apiservice.service';
+import { SessionmanagerService } from '../services/sessionmanager.service';
+
 
 @Component({
   selector: 'app-feedback',
@@ -12,7 +13,7 @@ export class FeedbackComponent implements OnInit {
   message = "";
   error = "";
   feedbacksubmitted = false;
-  constructor() { }
+  constructor(private session: SessionmanagerService) { }
 
   ngOnInit(): void {
   }
@@ -40,6 +41,17 @@ export class FeedbackComponent implements OnInit {
     //     this.feedbacksubmitted = true;
     //   }
     // )
+
+
+    this.session.send_feedback(data).subscribe(
+      data => {
+        this.feedbacksubmitted = true;
+      }, 
+      error => {
+        alert("Some Error occured Try again later");
+        this.feedbacksubmitted = true;
+      }
+    )
     
   }
 

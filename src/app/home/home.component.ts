@@ -49,8 +49,7 @@ export class HomeComponent implements OnInit {
           this.ui_gallery.push(element)
         }
       }
-    });  
-    console.log(this.ui_gallery);    
+    });     
   }
 
   get_ui_gallery() {
@@ -61,7 +60,6 @@ export class HomeComponent implements OnInit {
   showTagItem(name) {
     this.filter_tag = name;
     this.show_data();
-    console.log(name);
   }
 
   add_filter(tag_name) {
@@ -81,7 +79,6 @@ export class HomeComponent implements OnInit {
     this.service.getData().subscribe(
       (data) => {
         this.data = data["payload"]["data"];
-        console.log(this.data)
       }
     );
   }

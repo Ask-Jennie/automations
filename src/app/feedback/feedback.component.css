@@ -13,4 +13,9 @@ section {
 }
 .feedback {
     margin-top: 105px;
+    border-radius: 6px;
+}
+.welcome-msg {
+    text-align: center;
+    color: #646868;
 }

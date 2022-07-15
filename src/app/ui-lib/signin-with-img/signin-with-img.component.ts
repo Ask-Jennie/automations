@@ -45,7 +45,7 @@ export class SigninWithImgComponent implements OnInit {
   continue_with_login(loginDetails) {
     this.session.login(loginDetails).subscribe(
       data => {
-        this.session.store_login_info(data);
+        this.session.store_login_info(data["payload"]);
         window.location.href = "/";
       },
       error=> {

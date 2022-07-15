@@ -139,37 +139,18 @@ ul {
     display: block;
     padding: 28px 0 5px 0;
 }
-
-/* payal's code */
 .lg-card {
     margin-top: 1.75rem;
     background-color: #f4f5f7;
     padding-bottom: 60px;
     border-radius: 6px;
 }
+.lg-card:hover {
+    box-shadow: 0 10px 20px 0 rgb(18 19 20 / 22%)
+}
 .btn {
     border: solid 1px blue;
 }
-
-/* @media screen and (max-width: 600px) {
-    .lg-card {
-        margin-top: 120px;
-        background-color: rgba(253, 253, 253, 0.815);
-        padding-bottom: 0px;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    }
-  }
-  @media screen and (max-width: 947px) {
-    .lg-card { 
-        margin-top: 0px;
-        background-color: rgba(253, 253, 253, 0.815);
-        padding-bottom: 60px;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    }  
-  } */
-/* saurabh's code */
-
-
 .menu-icon-area {
     position: absolute; bottom:5px; left: 20%;
 }
@@ -188,7 +169,6 @@ ul {
 }
 
 .menu-icons.active {
-    /* border-bottom: 3px solid green; */
     border-bottom: 3px solid #2081C3;
 }
 .author{
@@ -196,13 +176,9 @@ ul {
     margin: 5px 0 0 0;
     font-size: 0.9rem;
 }
-
-
 .pagination {
-    margin-left: 0;
-    margin-bottom: 2rem ;
-    padding-left: 570px !important;
+    margin-bottom: 2.5rem;
     padding-top: 15px !important;
-  
+    justify-content: flex-end;
 }
 

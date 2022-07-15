@@ -10,10 +10,10 @@
     <ul class="navbar-nav">
     <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="/guide" routerLinkActive="active" ariaCurrentWhenActive="page">Guide</a></li>
     <li class="nav-item"><a class="nav-link" routerLink="/automation" routerLinkActive="active" ariaCurrentWhenActive="page">Automation</a></li>
-    <li class="nav-item"><a class="nav-link" routerLink="/feedback" routerLinkActive="active" ariaCurrentWhenActive="page">Feeback Query</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/feedback" routerLinkActive="active" ariaCurrentWhenActive="page">Feedback</a></li>
     <li class="nav-item"><a class="nav-link" routerLink="/profile" routerLinkActive="active" ariaCurrentWhenActive="page">My Profile</a></li>
     <li class="nav-item">
-      <button class="btn btn-success">Logout<i class="fas fa-sign-out-alt" style="margin-left: 10px;"></i></button>
+      <button class="btn btn-logout" (click)="logout()">Logout<i class="fas fa-sign-out-alt" style="margin-left: 10px;"></i></button>
     </li>
     </ul>
   </div>

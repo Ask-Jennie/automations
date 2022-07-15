@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SessionmanagerService } from './services/sessionmanager.service';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'automations';
+
+  constructor(private session:SessionmanagerService) {
+    
+  }
+
+  logout() {
+    this.session.remove_login_info();
+    window.location.reload();
+  }
 
   do_show_nav() {
     let loc_arr = window.location.href.split('/');

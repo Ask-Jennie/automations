@@ -36,3 +36,8 @@
 .navigate-collapse {
     justify-content: flex-end;
 }
+.btn-logout {
+    color: #fff;
+    background-color: #0c0664;
+    border-color: #0c0664;
+}

@@ -1,9 +1,9 @@
 <div class="jennie-guide container">
     <div class="row">
     <div class="col-lg-3">
-        <ul class="list-group">
-           <li class="list-group-item" *ngFor="let guide of guidemap; let j = index">
-                <a class="guide-link" href="javascript:void(0)" (click)="show_readme(guide.url)">{{guide.title}}</a>
+        <ul class="">
+           <li class="list-item" *ngFor="let guide of guidemap; let j = index">
+                <a class="component-link" href="javascript:void(0)" (click)="show_readme(guide.url)">{{guide.title}}</a>
             </li>
         </ul>
     </div>

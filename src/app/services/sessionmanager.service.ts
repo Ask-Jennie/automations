@@ -9,17 +9,19 @@ export class SessionmanagerService {
   LOGIN_ENDPOINT = this.BASE_URL + "v1/login/";
   SIGNUP_ENDPOINT = this.BASE_URL + "v1/signup/";
   LOGIN_STATUS_ENDPOINT =this.BASE_URL +  "v1/login-status/";
+  PROFILE_ENDPOINT = this.BASE_URL + "v1/profile/";
+  FEEDBACK_ENDPOINT = this.BASE_URL + "v1/feedbacks/";
   STORAGE_KEY = this.BASE_URL + "userinfo";
   constructor(private api:HttpClient) { }
 
   is_logged_in() {
-    let stroage_info = localStorage.getItem(this.STORAGE_KEY);
-    console.log(stroage_info);
-    if (stroage_info == null) {
+    let storage_info = localStorage.getItem(this.STORAGE_KEY);
+    console.log(storage_info);
+    if (storage_info == null) {
       return false;
     }
 
-    let userInfo = JSON.parse(stroage_info);
+    let userInfo = JSON.parse(storage_info);
     if (this.check_login_status(userInfo["token"])) {
       return true;
     }
@@ -42,4 +44,26 @@ export class SessionmanagerService {
   store_login_info(data:any) {
     localStorage.setItem(this.STORAGE_KEY, JSON.stringify(data))
   }
+
+  remove_login_info(){
+    localStorage.removeItem(this.STORAGE_KEY);
+  }
+
+  getProfileData() {
+    let storage_info = localStorage.getItem(this.STORAGE_KEY);
+    let userId = JSON.parse(storage_info)["_id"];
+    let token = JSON.parse(storage_info)["token"];
+    const headers = { 'token': token};
+   return this.api.get<any>(this.PROFILE_ENDPOINT + "?id=" + userId, { headers });
+  }
+
+  send_feedback(inputData) {
+    let storage_info = localStorage.getItem(this.STORAGE_KEY);
+    let token = JSON.parse(storage_info)["token"];
+    const headers = { 'token': token, 'Content-type': 'application/json'};
+    const body = inputData;
+    return this.api.post<any>(this.FEEDBACK_ENDPOINT, body, { headers });
+    
+  }
+
 }
