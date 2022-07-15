@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+.error-msg {
+    position: absolute;
+    z-index: 10000;
+    background-color: #BA0021;
+    padding: 20px 40px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .7px;
+    bottom: 10%;
+    font-size: 20px;
+    left: calc(50% - 200px);
+    border-radius: 100px;
+    width: 400px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
