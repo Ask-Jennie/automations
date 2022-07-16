@@ -2,8 +2,8 @@
     <div class="row">
     <div class="col-lg-3">
         <ul class="">
-           <li class="list-item" *ngFor="let guide of guidemap; let j = index" [class.active]="guide.url === link_to_show">
-                <a class="component-link" href="javascript:void(0)" (click)="show_readme(guide.url)">{{guide.title}}</a>
+           <li class="list-item" *ngFor="let guide of guidemap; let j = index" [class.active]="guide.url === link_to_show" (click)="show_readme(guide.url)">
+                <a class="component-link" href="javascript:void(0)">{{guide.title}}</a>
             </li>
         </ul>
     </div>
