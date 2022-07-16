@@ -21,6 +21,9 @@ pre {
     color: #444;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+table tr td pre {
     max-width: 400px;
     overflow-x: scroll;
 }
