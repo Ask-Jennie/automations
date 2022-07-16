@@ -16,6 +16,7 @@ import { SignupComponent } from './signup/signup.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { SigninWithImgComponent } from './ui-lib/signin-with-img/signin-with-img.component';
 import { ShowErrorToastComponent } from './ui-lib/show-error-toast/show-error-toast.component';
+import { SignupsuccessComponent } from './signupsuccess/signupsuccess.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ShowErrorToastComponent } from './ui-lib/show-error-toast/show-error-to
     LoginComponent,
     SignupComponent,
     SigninWithImgComponent,
-    ShowErrorToastComponent
+    ShowErrorToastComponent,
+    SignupsuccessComponent
   ],
   imports: [
     NgxPaginationModule,

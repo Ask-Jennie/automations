@@ -20,7 +20,7 @@ export class AppComponent {
 
   do_show_nav() {
     let loc_arr = window.location.href.split('/');
-    if (loc_arr[loc_arr.length -1] === "login" || loc_arr[loc_arr.length -1] === "signup") {
+    if (loc_arr[loc_arr.length -1] === "login" || loc_arr[loc_arr.length -1] === "signup" || loc_arr[loc_arr.length -1] === "signup-success") {
       return false;
     }
 

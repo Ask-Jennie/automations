@@ -45,7 +45,7 @@ export class SessionmanagerService {
   }
 
   signup(signup_details:any) {
-    return this.api.post("http://127.0.0.1:8000/v1/signup/", signup_details);
+    return this.api.post(this.SIGNUP_ENDPOINT, signup_details);
   }
 
   store_login_info(data:any) {

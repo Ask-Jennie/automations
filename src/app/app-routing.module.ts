@@ -7,8 +7,10 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AuthGuard } from './services/auth.gaurd';
 import { SignupComponent } from './signup/signup.component';
+import { SignupsuccessComponent } from './signupsuccess/signupsuccess.component';
 
 const routes: Routes = [
+  { path: 'signup-success', component: SignupsuccessComponent},
   { path: 'automation', component: HomeComponent, canActivate: [AuthGuard] },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
   { path: 'feedback', component: FeedbackComponent, canActivate: [AuthGuard] },

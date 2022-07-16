@@ -1,3 +1,4 @@
+<app-show-error-toast [error_msg]="error_msg"></app-show-error-toast>
 <section class="vh-100" style="background-color: #eee;">
 	<div class="container h-100">
 	  <div class="row d-flex justify-content-center align-items-center h-100">
@@ -12,14 +13,14 @@
 				  <form class="mx-1 mx-md-4">
 					  <div class="mb-3">
 						<label for="exampleFormControlInput1" class="form-label ">Your Name <span class="text-danger">*</span></label>
-						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" Your Name">
+						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" Your Name" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
 					  </div>
 					
   
 					
 					  <div class="mb-3">
 						<label for="exampleFormControlInput1" class="form-label">Email <span class="text-danger">*</span></label>
-						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
 					  </div>
 					
   
@@ -27,7 +28,7 @@
 					 
 					  <div class="mb-3">
 						<label for="exampleFormControlInput1" class="form-label">Password <span class="text-danger">*</span></label>
-						<input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+						<input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
 					  </div>
 				
   
@@ -41,11 +42,11 @@
 					</div>
   
 					<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-					  <button type="button" class="btn btn-primary btn-lg">Sign Up</button>
+					  <button type="button" class="btn btn-primary btn-lg" (click)="signup()">Sign Up</button>
 					</div>
 
 					<div class="d-flex justify-content-start mb-5">						
-						  Already have an Account?<a href="#!"> Sign in</a>						
+						  Already have an Account?<a href="/login"> Sign in</a>						
 					</div>
 				  </form>
   

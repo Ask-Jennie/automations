@@ -1,12 +1,13 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { SessionmanagerService } from '../services/sessionmanager.service';
 
 
 @Component({
   selector: 'app-guide',
   templateUrl: './guide.component.html',
-  styleUrls: ['./guide.component.css']
+  styleUrls: ['./guide.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class GuideComponent implements OnInit {
 
