@@ -1,0 +1,31 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.card .card-header {
+    padding: 1.5rem;
+    
+    }
+
+.card-header:first-child {
+    border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
+}
+
+.btn-outline-danger:hover:not(.active) {
+    background-color: transparent;
+    opacity: .75;
+    box-shadow: none;
+    color: #f5365c;
+}
+
+.btn.btn-sm.btn-icon-only, .btn-group-sm>.btn.btn-icon-only {
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 0.3rem 0.3rem;
+}
+
+.btn.btn-rounded {
+    border-radius: 1.875rem;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
