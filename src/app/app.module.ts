@@ -32,6 +32,7 @@ import { TableWithProgressbarComponent } from './table-with-progressbar/table-wi
 import { InvoiceComponent } from './invoice/invoice.component';
 import { TransactionComponent } from './transaction/transaction.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CardThreeVariantsComponent } from './card-three-variants/card-three-variants.component';
 
 
 
@@ -65,6 +66,7 @@ import { ProfileComponent } from './profile/profile.component';
     InvoiceComponent,
     TransactionComponent,
     ProfileComponent,
+    CardThreeVariantsComponent,
   ],
   
   imports: [

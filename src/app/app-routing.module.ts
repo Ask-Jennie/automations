@@ -17,6 +17,7 @@ import { TableWithProgressbarComponent } from './table-with-progressbar/table-wi
 import { InvoiceComponent } from './invoice/invoice.component';
 import { TransactionComponent } from './transaction/transaction.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CardThreeVariantsComponent } from './card-three-variants/card-three-variants.component';
 const routes: Routes = [
   { path: 'signin', component: SigninWithImgComponent },
   { path: 'signup', component: SignupComponent },
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'invoice', component:  InvoiceComponent},
   { path: 'transaction', component:  TransactionComponent },
   { path: 'profile', component:  ProfileComponent},
+  { path: 'variants', component:  CardThreeVariantsComponent},
 
   
 
