@@ -34,6 +34,9 @@ import { TransactionComponent } from './transaction/transaction.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CardThreeVariantsComponent } from './card-three-variants/card-three-variants.component';
 import { CardImageVariantsComponent } from './card-image-variants/card-image-variants.component';
+import { CardHorizontalComponent } from './card-horizontal/card-horizontal.component';
+import { CardColourVariantsComponent } from './card-colour-variants/card-colour-variants.component';
+import { CardMasonryComponent } from './card-masonry/card-masonry.component';
 
 
 
@@ -69,6 +72,9 @@ import { CardImageVariantsComponent } from './card-image-variants/card-image-var
     ProfileComponent,
     CardThreeVariantsComponent,
     CardImageVariantsComponent,
+    CardHorizontalComponent,
+    CardColourVariantsComponent,
+    CardMasonryComponent,
   ],
   
   imports: [

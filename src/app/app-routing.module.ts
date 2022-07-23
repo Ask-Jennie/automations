@@ -19,6 +19,9 @@ import { TransactionComponent } from './transaction/transaction.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CardThreeVariantsComponent } from './card-three-variants/card-three-variants.component';
 import { CardImageVariantsComponent } from './card-image-variants/card-image-variants.component';
+import { CardHorizontalComponent } from './card-horizontal/card-horizontal.component';
+import { CardColourVariantsComponent } from './card-colour-variants/card-colour-variants.component';
+import { CardMasonryComponent } from './card-masonry/card-masonry.component';
 const routes: Routes = [
   { path: 'signin', component: SigninWithImgComponent },
   { path: 'signup', component: SignupComponent },
@@ -38,6 +41,9 @@ const routes: Routes = [
   { path: 'profile', component:  ProfileComponent},
   { path: 'variants', component:  CardThreeVariantsComponent},
   { path: 'imgvariant', component:  CardImageVariantsComponent},
+  { path: 'cardhorizontal', component:  CardHorizontalComponent},
+  { path: 'colorvariants', component:  CardColourVariantsComponent },
+  { path: 'cardmasonry', component:  CardMasonryComponent},
 
   
 

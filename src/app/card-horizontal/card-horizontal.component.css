@@ -1,0 +1,129 @@
+
+  .layout-page,
+  .content-wrapper,
+  .content-wrapper>*,
+  .layout-menu {
+    min-height: 1px;
+  }
+
+  .container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 1.625rem);
+  padding-left: var(--bs-gutter-x, 1.625rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-xxl {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.btn-outline-primary {
+    color: #696cff;
+    border-color: #696cff;
+    background: transparent;
+}
+.btn-outline-primary  :hover{
+    color: #696cff;
+    border-color: #696cff;
+    background: transparent;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.5rem 1.5rem;
+}
+
+a {
+    color: #696cff;
+    text-decoration: none;
+}
+
+
+h5 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #566a7f;
+    font-size: 1.6rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.card-img-left {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card-img-right {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #a1acb8 !important;
+}
+
+.card {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-style: none;
+
+}
+
+
+
+@media (min-width: 992px) {
+
+  .container,
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    padding-right: 1.625rem;
+    padding-left: 1.625rem;
+  }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+    h5 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        line-height: 1.1;
+        color: #566a7f;
+        font-size: 1rem;
+    }
+    
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: .8rem;
+    }
+
+
+}
