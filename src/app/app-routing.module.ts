@@ -18,6 +18,7 @@ import { InvoiceComponent } from './invoice/invoice.component';
 import { TransactionComponent } from './transaction/transaction.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CardThreeVariantsComponent } from './card-three-variants/card-three-variants.component';
+import { CardImageVariantsComponent } from './card-image-variants/card-image-variants.component';
 const routes: Routes = [
   { path: 'signin', component: SigninWithImgComponent },
   { path: 'signup', component: SignupComponent },
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'transaction', component:  TransactionComponent },
   { path: 'profile', component:  ProfileComponent},
   { path: 'variants', component:  CardThreeVariantsComponent},
+  { path: 'imgvariant', component:  CardImageVariantsComponent},
 
   
 

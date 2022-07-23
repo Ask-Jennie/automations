@@ -33,6 +33,7 @@ import { InvoiceComponent } from './invoice/invoice.component';
 import { TransactionComponent } from './transaction/transaction.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CardThreeVariantsComponent } from './card-three-variants/card-three-variants.component';
+import { CardImageVariantsComponent } from './card-image-variants/card-image-variants.component';
 
 
 
@@ -67,6 +68,7 @@ import { CardThreeVariantsComponent } from './card-three-variants/card-three-var
     TransactionComponent,
     ProfileComponent,
     CardThreeVariantsComponent,
+    CardImageVariantsComponent,
   ],
   
   imports: [
