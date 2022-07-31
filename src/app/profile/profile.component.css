@@ -95,13 +95,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-hr {
-  margin: 1rem 0;
-  color: inherit;
-  border: 0;
-  border-top: 1px solid;
-  opacity: 0.25;
-}
+
 
 h1,
 .h1,
@@ -1340,16 +1334,10 @@ progress {
     flex: 0 0 auto;
     width: 25%;
   }
-
-
-
   .col-md-6 {
     flex: 0 0 auto;
     width: 50%;
   }
-
-
-
   .col-md-12 {
     flex: 0 0 auto;
     width: 100%;
@@ -5520,9 +5508,7 @@ fieldset:disabled .btn {
   border-color: var(--bs-pagination-disabled-border-color);
 }
 
-.page-item:not(:first-child) .page-link {
-  margin-left: calc($pagination-border-width * -1);
-}
+
 
 .page-item:first-child .page-link {
   border-top-left-radius: var(--bs-pagination-border-radius);
@@ -10010,7 +9996,7 @@ fieldset:disabled .btn {
 }
 
 .py-4 {
-  padding-top: 1.5rem !important;
+  padding-top: 8.5rem !important;
   padding-bottom: 1.5rem !important;
 }
 
@@ -20010,23 +19996,7 @@ fieldset:disabled .btn {
   }
 }
 
-/*!
 
-=========================================================
-* Argon Dashboard 2 - v2.0.4
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (site.license)
-
-* Coded by www.creative-tim.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 .alert-primary {
   background-image: linear-gradient(310deg, #5e72e4 0%, #673bde 100%);
 }
@@ -22404,7 +22374,7 @@ hr.horizontal.gray-light {
   }
 }
 
-@use "sass:math";
+
 
 .navbar-vertical .navbar-brand>img,
 .navbar-vertical .navbar-brand-img {
@@ -22967,7 +22937,6 @@ hr.horizontal.gray-light {
     height: 100%;
   }
 }
-
 @media (min-width: 1400px) {
   .navbar-vertical.navbar-expand-xxl.fixed-start {
     left: 0;
@@ -23021,16 +22990,15 @@ hr.horizontal.gray-light {
     border-radius: 0.25rem;
   }
 
-  .navbar-vertical.navbar-expand-xxl .navbar-nav .nav .nav-link {
-    padding-top: calc($navbar-vertical-nav-link-padding-y / 1.5);
-    padding-bottom: calc($navbar-vertical-nav-link-padding-y / 1.5);
-    padding-left: 15px;
-  }
+
 
   .navbar-vertical.navbar-expand-xxl .navbar-nav .nav .nav-link>span.sidenav-normal {
     transition: all 0.1s ease 0s;
   }
 }
+
+
+
 
 .sidenav[data-color="primary"] .navbar-nav>.nav-item>.nav-link.active {
   background-image: linear-gradient(310deg, #5e72e4 0%, #5e72e4 100%);
@@ -25297,7 +25265,6 @@ body.dark-version {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   background: #fff;
-  -webkit-box-shadow: 0 8px 26px -4px rgba(20, 20, 20, 0.15), 0 8px 9px -5px rgba(20, 20, 20, 0.06);
 }
 
 .flatpickr-calendar.open,
@@ -26401,10 +26368,8 @@ span.flatpickr-weekday {
   border-radius: 100%;
   background: #5e72e4;
   cursor: default;
-  webkit-transition: .3s ease 0s;
   -moz-transition: .3s ease 0s;
   -ms-transition: .3s ease 0s;
-  -o-transform: .3s ease 0s;
   transition: .3s ease 0s;
 }
 
@@ -26838,7 +26803,6 @@ pre[class*="language-"] {
   }
 }
 
-/*# sourceMappingURL=dashboard-free.css.map */
 
 
 .row[_ngcontent-gro-c23] > *[_ngcontent-gro-c23] {
@@ -26848,4 +26812,17 @@ pre[class*="language-"] {
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
   margin-top: var(--bs-gutter-y);
+}
+
+
+
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(2.5 * var(--bs-gutter-x));
+  margin-left: calc(2.5 * var(--bs-gutter-x));
 }

@@ -40,6 +40,7 @@ import { CardMasonryComponent } from './card-masonry/card-masonry.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,6 +76,7 @@ import { CardMasonryComponent } from './card-masonry/card-masonry.component';
     CardHorizontalComponent,
     CardColourVariantsComponent,
     CardMasonryComponent,
+   
   ],
   
   imports: [
