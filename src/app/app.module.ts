@@ -37,6 +37,11 @@ import { CardImageVariantsComponent } from './card-image-variants/card-image-var
 import { CardHorizontalComponent } from './card-horizontal/card-horizontal.component';
 import { CardColourVariantsComponent } from './card-colour-variants/card-colour-variants.component';
 import { CardMasonryComponent } from './card-masonry/card-masonry.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormVerticalComponent } from './form-vertical/form-vertical.component';
+import { FormVerticalWithIconComponent } from './form-vertical-with-icon/form-vertical-with-icon.component';
+import { FormHorizontalComponent } from './form-horizontal/form-horizontal.component';
+import { FormHorizontalWithIconComponent } from './form-horizontal-with-icon/form-horizontal-with-icon.component';
 
 
 
@@ -76,6 +81,10 @@ import { CardMasonryComponent } from './card-masonry/card-masonry.component';
     CardHorizontalComponent,
     CardColourVariantsComponent,
     CardMasonryComponent,
+    FormVerticalComponent,
+    FormVerticalWithIconComponent,
+    FormHorizontalComponent,
+    FormHorizontalWithIconComponent,
    
   ],
   
@@ -83,7 +92,8 @@ import { CardMasonryComponent } from './card-masonry/card-masonry.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
