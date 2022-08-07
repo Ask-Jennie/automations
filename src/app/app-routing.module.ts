@@ -23,6 +23,9 @@ import { CardHorizontalComponent } from './card-horizontal/card-horizontal.compo
 import { CardColourVariantsComponent } from './card-colour-variants/card-colour-variants.component';
 import { CardMasonryComponent } from './card-masonry/card-masonry.component';
 import { FormVerticalComponent } from './form-vertical/form-vertical.component';
+import { FormVerticalWithIconComponent } from './form-vertical-with-icon/form-vertical-with-icon.component';
+import { FormHorizontalComponent } from './form-horizontal/form-horizontal.component';
+import { FormHorizontalWithIconComponent } from './form-horizontal-with-icon/form-horizontal-with-icon.component';
 
 const routes: Routes = [
   { path: 'signin', component: SigninWithImgComponent },
@@ -47,6 +50,10 @@ const routes: Routes = [
   { path: 'colorvariants', component:  CardColourVariantsComponent },
   { path: 'cardmasonry', component:  CardMasonryComponent},
   { path: 'fvertical', component:  FormVerticalComponent},
+  { path: 'horiz', component:  FormHorizontalComponent},
+  { path: 'horizicon', component:  FormHorizontalWithIconComponent},
+
+
 ];
 
 // configures NgModule imports and exports
