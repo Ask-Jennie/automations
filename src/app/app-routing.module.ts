@@ -26,6 +26,7 @@ import { FormVerticalComponent } from './form-vertical/form-vertical.component';
 import { FormVerticalWithIconComponent } from './form-vertical-with-icon/form-vertical-with-icon.component';
 import { FormHorizontalComponent } from './form-horizontal/form-horizontal.component';
 import { FormHorizontalWithIconComponent } from './form-horizontal-with-icon/form-horizontal-with-icon.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
   { path: 'signin', component: SigninWithImgComponent },
@@ -52,6 +53,9 @@ const routes: Routes = [
   { path: 'fvertical', component:  FormVerticalComponent},
   { path: 'horiz', component:  FormHorizontalComponent},
   { path: 'horizicon', component:  FormHorizontalWithIconComponent},
+  { path: 'feedback', component:  FeedbackComponent},
+  { path: 'vicon', component:  FormVerticalWithIconComponent},
+
 
 
 ];
