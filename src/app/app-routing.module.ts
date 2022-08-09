@@ -27,6 +27,7 @@ import { FormVerticalWithIconComponent } from './form-vertical-with-icon/form-ve
 import { FormHorizontalComponent } from './form-horizontal/form-horizontal.component';
 import { FormHorizontalWithIconComponent } from './form-horizontal-with-icon/form-horizontal-with-icon.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 
 const routes: Routes = [
   { path: 'signin', component: SigninWithImgComponent },
@@ -55,6 +56,7 @@ const routes: Routes = [
   { path: 'horizicon', component:  FormHorizontalWithIconComponent},
   { path: 'feedback', component:  FeedbackComponent},
   { path: 'vicon', component:  FormVerticalWithIconComponent},
+  { path: 'forget', component:  ForgetPasswordComponent},
 
 
 

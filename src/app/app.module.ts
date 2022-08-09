@@ -43,6 +43,9 @@ import { FormVerticalWithIconComponent } from './form-vertical-with-icon/form-ve
 import { FormHorizontalComponent } from './form-horizontal/form-horizontal.component';
 import { FormHorizontalWithIconComponent } from './form-horizontal-with-icon/form-horizontal-with-icon.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { OtpComponent } from './otp/otp.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 
 
@@ -87,6 +90,9 @@ import { FeedbackComponent } from './feedback/feedback.component';
     FormHorizontalComponent,
     FormHorizontalWithIconComponent,
     FeedbackComponent,
+    ForgetPasswordComponent,
+    OtpComponent,
+    ChangePasswordComponent,
    
   ],
   
