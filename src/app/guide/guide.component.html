@@ -1,11 +1,12 @@
 <div class="jennie-guide container">
-    <div class="row">
+    <div class="row container">
     <div class="col-lg-3">
-        <ul class="">
+        <!-- <ul class="">
            <li class="list-item" *ngFor="let guide of guidemap; let j = index" [class.active]="guide.url === link_to_show" (click)="show_readme(guide.url)">
                 <a class="component-link" href="javascript:void(0)">{{guide.title}}</a>
             </li>
-        </ul>
+        </ul> -->
+        <app-guide-sidbar [sidebar]="guidemap" (clicked_event)="show_readme($event)"></app-guide-sidbar>
     </div>
     <div class="col-lg-9">
         <section class="guide-card" *ngIf="link_to_show != ''">

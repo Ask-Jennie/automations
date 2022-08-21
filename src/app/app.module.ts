@@ -13,10 +13,11 @@ import { MarkdownModule } from 'ngx-markdown';
 import { SignupWithImgComponent } from './ui-lib/signup-with-img/signup-with-img.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import {NgxPaginationModule} from 'ngx-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { SigninWithImgComponent } from './ui-lib/signin-with-img/signin-with-img.component';
 import { ShowErrorToastComponent } from './ui-lib/show-error-toast/show-error-toast.component';
 import { SignupsuccessComponent } from './signupsuccess/signupsuccess.component';
+import { GuideSidbarComponent } from './ui-lib/guide-sidbar/guide-sidbar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SignupsuccessComponent } from './signupsuccess/signupsuccess.component'
     SignupComponent,
     SigninWithImgComponent,
     ShowErrorToastComponent,
-    SignupsuccessComponent
+    SignupsuccessComponent,
+    GuideSidbarComponent
   ],
   imports: [
     NgxPaginationModule,

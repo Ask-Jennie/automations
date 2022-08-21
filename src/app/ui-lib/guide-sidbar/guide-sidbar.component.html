@@ -1,0 +1,12 @@
+<div class="slidebar">
+    <ul>
+        <li *ngFor="let menu of sidebar; let i = index" class="main-menu-text">
+            <a href="javascript:void(0)" (click)="return_clicked_event(menu.submenu[0])">{{menu.title}}</a>
+            <ul>
+                <li *ngFor="let element of menu.submenu; let j = index" class="sub-menu-text">
+                    <a href="javascript:void(0)" (click)="return_clicked_event(element)">{{element.title}}</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
