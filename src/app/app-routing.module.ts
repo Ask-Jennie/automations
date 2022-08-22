@@ -28,6 +28,8 @@ import { FormHorizontalComponent } from './form-horizontal/form-horizontal.compo
 import { FormHorizontalWithIconComponent } from './form-horizontal-with-icon/form-horizontal-with-icon.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { OtpComponent } from './otp/otp.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 const routes: Routes = [
   { path: 'signin', component: SigninWithImgComponent },
@@ -57,7 +59,10 @@ const routes: Routes = [
   { path: 'feedback', component:  FeedbackComponent},
   { path: 'vicon', component:  FormVerticalWithIconComponent},
   { path: 'forget', component:  ForgetPasswordComponent},
-
+  { path: 'otp', component:  OtpComponent},
+  { path: 'changepassword', component:  ChangePasswordComponent},
+  
+ 
 
 
 ];
