@@ -30,6 +30,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { OtpComponent } from './otp/otp.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 const routes: Routes = [
   { path: 'signin', component: SigninWithImgComponent },
@@ -61,6 +62,7 @@ const routes: Routes = [
   { path: 'forget', component:  ForgetPasswordComponent},
   { path: 'otp', component:  OtpComponent},
   { path: 'changepassword', component:  ChangePasswordComponent},
+  { path: 'productcard', component:  ProductCardComponent},
   
  
 
