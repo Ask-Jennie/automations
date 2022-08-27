@@ -1,0 +1,45 @@
+{
+    "_id": 135,
+    "created_by": {
+        "_id": 3,
+        "email": "payal@ask-jennie.com",
+        "fullname": "Payal Gangwar",
+        "city": "Noida",
+        "bio": "Software Developer",
+        "is_active": 1
+    },
+    "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1661610578-645983.png",
+    "app_name": "sidebar-nav",
+    "app_title": "Sidebar",
+    "app_description": "sidebar nav component",
+    "tag": "Sidebars",
+    "stack": "angular",
+    "type": "angular-ui-lib",
+    "automation_conf": [
+        {
+            "event_type": "create-angular-component",
+            "component_name": "ui-lib/sidebar-nav"
+        },
+        {
+            "files": [
+                {
+                    "out_path": "src/app/ui-lib/sidebar-nav/sidebar-nav.component.ts",
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/sidebar-nav/sidebar-nav.component.ts"
+                },
+                {
+                    "out_path": "src/app/ui-lib/sidebar-nav/sidebar-nav.component.html",
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/sidebar-nav/sidebar-nav.component.html"
+                },
+                {
+                    "out_path": "src/app/ui-lib/sidebar-nav/sidebar-nav.component.css",
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/sidebar-nav/sidebar-nav.component.css"
+                }
+            ],
+            "event_type": "download-files"
+        }
+    ],
+    "dependencies": [],
+    "is_active": false,
+    "created_on": "2022-08-27T14:29:39.201611Z",
+    "updated_on": "2022-08-27T14:29:39.201649Z"
+}

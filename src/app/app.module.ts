@@ -47,6 +47,10 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
 import { OtpComponent } from './otp/otp.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { SidebarNavComponent } from './sidebar-nav/sidebar-nav.component';
+import { MegaMenuSidebarComponent } from './mega-menu-sidebar/mega-menu-sidebar.component';
+import { SidebarShowHideComponent } from './sidebar-show-hide/sidebar-show-hide.component';
+import { SinglePageComponent } from './single-page/single-page.component';
 
 
 
@@ -95,6 +99,10 @@ import { ProductCardComponent } from './product-card/product-card.component';
     OtpComponent,
     ChangePasswordComponent,
     ProductCardComponent,
+    SidebarNavComponent,
+    MegaMenuSidebarComponent,
+    SidebarShowHideComponent,
+    SinglePageComponent,
    
   ],
   

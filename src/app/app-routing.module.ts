@@ -31,6 +31,10 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
 import { OtpComponent } from './otp/otp.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { SidebarNavComponent } from './sidebar-nav/sidebar-nav.component';
+import { MegaMenuSidebarComponent } from './mega-menu-sidebar/mega-menu-sidebar.component';
+import { SidebarShowHideComponent } from './sidebar-show-hide/sidebar-show-hide.component';
+import { SinglePageComponent } from './single-page/single-page.component';
 
 const routes: Routes = [
   { path: 'signin', component: SigninWithImgComponent },
@@ -63,6 +67,12 @@ const routes: Routes = [
   { path: 'otp', component:  OtpComponent},
   { path: 'changepassword', component:  ChangePasswordComponent},
   { path: 'productcard', component:  ProductCardComponent},
+  { path: 'sidebar-nav', component:  SidebarNavComponent},
+  { path: 'mega', component:  MegaMenuSidebarComponent},
+  { path: 'showHide', component:  SidebarShowHideComponent},
+  { path: 'singlepage', component: SinglePageComponent},
+
+
   
  
 

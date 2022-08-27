@@ -1,0 +1,45 @@
+{
+    "_id": 137,
+    "created_by": {
+        "_id": 3,
+        "email": "payal@ask-jennie.com",
+        "fullname": "Payal Gangwar",
+        "city": "Noida",
+        "bio": "Software Developer",
+        "is_active": 1
+    },
+    "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1661610740-6421113.png",
+    "app_name": "mega-menu-sidebar",
+    "app_title": "Mega menu sidebar",
+    "app_description": "mega menu sidebar component",
+    "tag": "Sidebars",
+    "stack": "angular",
+    "type": "angular-ui-lib",
+    "automation_conf": [
+        {
+            "event_type": "create-angular-component",
+            "component_name": "ui-lib/mega-menu-sidebar"
+        },
+        {
+            "files": [
+                {
+                    "out_path": "src/app/ui-lib/mega-menu-sidebar/mega-menu-sidebar.component.ts",
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/mega-menu-sidebar/mega-menu-sidebar.component.ts"
+                },
+                {
+                    "out_path": "src/app/ui-lib/mega-menu-sidebar/mega-menu-sidebar.component.html",
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/mega-menu-sidebar/mega-menu-sidebar.component.html"
+                },
+                {
+                    "out_path": "src/app/ui-lib/mega-menu-sidebar/mega-menu-sidebar.component.css",
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/mega-menu-sidebar/mega-menu-sidebar.component.css"
+                }
+            ],
+            "event_type": "download-files"
+        }
+    ],
+    "dependencies": [],
+    "is_active": false,
+    "created_on": "2022-08-27T14:32:21.172379Z",
+    "updated_on": "2022-08-27T14:32:21.172416Z"
+}
