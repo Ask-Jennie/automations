@@ -20,7 +20,7 @@
                                                         
                                                           <span class="input-group-text bg-light " ><i class="fa fa-user"></i></span>
                                                        
-                                                        <input type="text" class="form-control text-muted" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                        <input type="text" class="form-control text-muted" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="fullname" [ngModelOption]="standalone: true">
                                                     </div>
                                             </div>
                                             <div class="mb-3">
@@ -32,7 +32,7 @@
                                                     <input type="text" id="basic-icon-default-company"
                                                         class="form-control" placeholder="ACME Inc."
                                                         aria-label="ACME Inc."
-                                                        aria-describedby="basic-icon-default-company2" />
+                                                        aria-describedby="basic-icon-default-company2" [(ngModel)]="company_name" [ngModelOption]="standalone: true" />
                                                 </div>
                                             </div>
                                             <div class="mb-3">
@@ -42,7 +42,7 @@
                                                     <input type="text" id="basic-icon-default-email"
                                                         class="form-control" placeholder="john.doe"
                                                         aria-label="john.doe"
-                                                        aria-describedby="basic-icon-default-email2" />
+                                                        aria-describedby="basic-icon-default-email2" [(ngModel)]="email" [ngModelOption]="standalone: true" />
                                                     <span id="basic-icon-default-email2"
                                                         class="input-group-text bg-light">@example.com</span>
                                                 </div>
@@ -58,7 +58,7 @@
                                                     <input type="text" id="basic-icon-default-phone"
                                                         class="form-control phone-mask" placeholder="658 799 8941"
                                                         aria-label="658 799 8941"
-                                                        aria-describedby="basic-icon-default-phone2" />
+                                                        aria-describedby="basic-icon-default-phone2" [(ngModel)]="phone" [ngModelOption]="standalone: true" />
                                                 </div>
                                             </div>
                                             <div class="mb-3">
@@ -68,12 +68,13 @@
                                                     
                                                             <!-- <span class="input-group-text bg-light"><i class="fa fa-comment"></i></span> -->
                                                     <textarea id="basic-icon-default-message" class="form-control"
+                                                    [(ngModel)]="message" [ngModelOption]="standalone: true"
                                                         placeholder="Hi, Do you have a moment to talk Joe?"
                                                         aria-label="Hi, Do you have a moment to talk Joe?"
                                                         aria-describedby="basic-icon-default-message2"></textarea>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="btn btn-primary">Send</button>
+                                            <button (click)="send()" type="submit" class="btn btn-primary">Send</button>
                                         </form>
                                     </div>
                                 </div>

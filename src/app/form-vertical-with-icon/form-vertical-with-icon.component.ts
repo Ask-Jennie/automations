@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormVerticalWithIconComponent implements OnInit {
 
+  fullname = "";
+  company_name = "";
+  email = "";
+  phone = "";
+  message = "";
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  send(){
+
+    let data = {
+
+      fullname:this.fullname,
+      company_name: this.company_name,
+      email: this.email,
+      phone: this.phone,
+      message: this.message,
+    }
+    console.log(data);
   }
 
 }
