@@ -1,0 +1,9 @@
+2022-09-03 10:31:03.723046 :: Final Command
+2022-09-03 10:31:03.723054 :: {
+  "command": [
+    "angular",
+    "automations",
+    "download",
+    "sampleapp"
+  ]
+}

@@ -182,3 +182,40 @@ ul {
     justify-content: flex-end;
 }
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+h1 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3, h4 {
+    margin-bottom: 10px;
+}
+
+pre {
+    background: #2d3145;
+    padding: 20px 20px;
+    background-color: #75689633;
+    border: 0.5px solid #DBDBDB;
+    border-radius: 6px;
+    color: #444;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5rem;
+}
+
+table tr td pre {
+    max-width: 400px;
+    overflow-x: scroll;
+}
+
+td, th {
+    border: 1px solid;
+    padding: 5px;
+}

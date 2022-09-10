@@ -1,0 +1,9 @@
+2022-09-06 20:07:22.369393 :: Final Command
+2022-09-06 20:07:22.369401 :: {
+  "command": [
+    "angular",
+    "ui-lib",
+    "download",
+    "mega-menu-sidebar"
+  ]
+}

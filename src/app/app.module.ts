@@ -18,6 +18,7 @@ import { SigninWithImgComponent } from './ui-lib/signin-with-img/signin-with-img
 import { ShowErrorToastComponent } from './ui-lib/show-error-toast/show-error-toast.component';
 import { SignupsuccessComponent } from './signupsuccess/signupsuccess.component';
 import { GuideSidbarComponent } from './ui-lib/guide-sidbar/guide-sidbar.component';
+import { MegaMenuSidebarComponent } from './ui-lib/mega-menu-sidebar/mega-menu-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { GuideSidbarComponent } from './ui-lib/guide-sidbar/guide-sidbar.compone
     SigninWithImgComponent,
     ShowErrorToastComponent,
     SignupsuccessComponent,
-    GuideSidbarComponent
+    GuideSidbarComponent,
+    MegaMenuSidebarComponent
   ],
   imports: [
     NgxPaginationModule,

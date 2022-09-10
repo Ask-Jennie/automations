@@ -15,6 +15,7 @@
               (change)="onTypeChanged($event)">
               <option value="angular-ui-lib">Angular UI Lib</option>
               <option value="angular-automations">Angular Automation</option>
+              <option value="django-automations">Django Automations</option>
             </select>
             <br>
           </div>
@@ -56,22 +57,18 @@
                   <span style="color: #806cf9;margin-right: 3px;"><i
                       class="fas fa-tags"></i></span>{{gallery.tag}}</span>
               </div>
-              <div class="" *ngIf="type_automation === 'angular-ui-lib'">
+              <div class="">
                 <ul class="nav nav-pills preview-code" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-bs-toggle="pill" href="#preview-{{i}}">Preview
+                  <li class="nav-item" *ngIf="gallery.app_image !== ''">
+                    <a class="nav-link" [class.active]="gallery.app_image !== ''" data-bs-toggle="pill" href="#preview-{{i}}">Preview
                       <span><i class="fas fa-eye"></i></span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="pill" href="#code-{{i}}">Code
+                    <a class="nav-link" [class.active]="gallery.app_image === ''" data-bs-toggle="pill" href="#code-{{i}}">Code
                       <span><i class="fas fa-code"></i></span></a>
                   </li>
-                </ul>
-              </div>
-              <div class="" *ngIf="type_automation !== 'angular-ui-lib'">
-                <ul class="nav nav-pills preview-code" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-bs-toggle="pill" href="#code-{{i}}">Code
+                  <li class="nav-item" *ngIf="gallery.readme !== ''">
+                    <a class="nav-link" data-bs-toggle="pill" href="#readme-{{i}}">Readme
                       <span><i class="fas fa-code"></i></span></a>
                   </li>
                 </ul>
@@ -80,14 +77,12 @@
 
             <!-- Tab panes -->
             <div class="tab-content">
-              <div id="preview-{{i}}" class="container tab-pane active component-img"
-                *ngIf="type_automation === 'angular-ui-lib'" [class.fade]="type_automation !== 'angular-ui-lib'"><br>
+              <div id="preview-{{i}}" *ngIf="gallery.app_image !== ''" class="container tab-pane active component-img"><br>
                 <img class="ui-lib-image" [src]="gallery.app_image">
               </div>
-              <div id="code-{{i}}" class="container tab-pane fade" [class.fade]="type_automation === 'angular-ui-lib'"
-                [class.active]="type_automation !== 'angular-ui-lib'"><br>
+              <div id="code-{{i}}" class="container tab-pane" [class.active]="gallery.app_image === ''"><br>
                 <h3>Code</h3>
-                <pre>jennie angular <span *ngIf="type_automation === 'angular-ui-lib'">ui-lib</span><span *ngIf="type_automation === 'angular-automations'">automations</span> download {{gallery.app_name}}</pre>
+                <pre>jennie {{gallery.stack}}<span *ngIf="type_automation === 'angular-ui-lib'">ui-lib</span><span *ngIf="type_automation === 'angular-automations'">automations</span> <span *ngIf="type_automation === 'django-automations'">automations</span> download {{gallery.app_name}}</pre>
                 <span *ngIf="type_automation === 'angular-ui-lib'">
                   <p><br><br> Make sure the command is executed inside from angular project, once the command is
                     finished user shall find the module at src/app/ui-lib/{{gallery.app_name}}. The component can be
@@ -95,6 +90,11 @@
                   <pre>&lt;app-{{gallery.app_name}}&gt;&lt;/app-{{gallery.app_name}}&gt; </pre>
                 </span>
                 <p>{{gallery.app_description}}</p>
+              </div>
+              <div id="readme-{{i}}" *ngIf="gallery.readme !== ''" class="container tab-pane component-img fade"><br>
+                <markdown
+                  clipboard [src]="gallery.readme">
+                </markdown>
               </div>
             </div>
             <p class="author"><b>Updated By:</b> {{gallery.created_by.fullname}}</p>
