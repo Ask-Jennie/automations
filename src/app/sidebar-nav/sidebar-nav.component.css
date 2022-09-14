@@ -37,7 +37,7 @@ Sidebar
   position: absolute;
   width: 17em;
   height: 100%;
-  top: 8rem;
+  top: 0;
 
   overflow: hidden;
   background-color: #19222a;

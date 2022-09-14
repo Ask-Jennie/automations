@@ -51,6 +51,7 @@ import { SidebarNavComponent } from './sidebar-nav/sidebar-nav.component';
 import { MegaMenuSidebarComponent } from './mega-menu-sidebar/mega-menu-sidebar.component';
 import { SidebarShowHideComponent } from './sidebar-show-hide/sidebar-show-hide.component';
 import { SinglePageComponent } from './single-page/single-page.component';
+import { ContactUsFormComponent } from './ui-lib/contact-us-form/contact-us-form.component';
 
 
 
@@ -103,6 +104,7 @@ import { SinglePageComponent } from './single-page/single-page.component';
     MegaMenuSidebarComponent,
     SidebarShowHideComponent,
     SinglePageComponent,
+    ContactUsFormComponent,
    
   ],
   
