@@ -19,6 +19,8 @@ import { ShowErrorToastComponent } from './ui-lib/show-error-toast/show-error-to
 import { SignupsuccessComponent } from './signupsuccess/signupsuccess.component';
 import { GuideSidbarComponent } from './ui-lib/guide-sidbar/guide-sidbar.component';
 import { MegaMenuSidebarComponent } from './ui-lib/mega-menu-sidebar/mega-menu-sidebar.component';
+import { LoginsignupsimplethemeComponent } from './ui-lib/loginsignupsimpletheme/loginsignupsimpletheme.component';
+import { ProductCardComponent } from './ui-lib/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { MegaMenuSidebarComponent } from './ui-lib/mega-menu-sidebar/mega-menu-s
     ShowErrorToastComponent,
     SignupsuccessComponent,
     GuideSidbarComponent,
-    MegaMenuSidebarComponent
+    MegaMenuSidebarComponent,
+    LoginsignupsimplethemeComponent,
+    ProductCardComponent,
   ],
   imports: [
     NgxPaginationModule,

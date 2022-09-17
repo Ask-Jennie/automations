@@ -38,12 +38,6 @@ td, th {
     font-family: 'Open Sans', sans-serif;
 }
 
-.guide-link { 
-    text-decoration: none;
-    color: #3a3939;
-    display: block;
-    padding: 5px 0;
-}
 .guide-card {
     margin-left: 40px;
     /* background-color: #f4f5f7; */
@@ -51,31 +45,4 @@ td, th {
     border-radius: 6px;
     margin-bottom: 40px;
 }
-.guide-link:hover {
-    color: #5161ce;
-    font-weight: 600;
-}
-.list-item {
-    display: block;
-    padding: 10px 6px;
-}
-.list-item:hover {
-    background-color: #f4f5f7;
-    cursor: pointer;
-    border-radius: 6px;
-}
 
-.list-item.active {
-    background-color: #f4f5f7;
-    cursor: pointer;
-    border-radius: 6px;
-}
-.list-item a {
-    text-decoration: none;
-    color: #536387;  
-    font-size: .95rem;
-    font-weight: 700;
-}
-.component-link {
-    color: #536387;
-}

@@ -24,12 +24,12 @@ export class GuideComponent implements OnInit {
       data => {
         console.log("Got Tutorials", data);
         this.guidemap = data["payload"];
-        this.show_readme(this.guidemap[0]["submenu"][0]);
+        this.show_readme(this.guidemap[0]["readme_link"]);
       }
     )
   }
 
   show_readme(event) {
-    this.link_to_show = event["readme_link"];
+    this.link_to_show = event;
   }
 }

@@ -1,0 +1,48 @@
+{
+    "_id": 45,
+    "created_by": {
+        "_id": 1,
+        "email": "saurabh@ask-jennie.com",
+        "fullname": "Saurabh Pandey",
+        "city": "Gurgaon",
+        "bio": "Full Stack Developer",
+        "is_active": 1
+    },
+    "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1657366012-504361.png",
+    "app_name": "loginsignupsimpletheme",
+    "app_title": "Blue Theme Login Signup",
+    "app_description": "Simple Login and Signup page with button to switch between them. The switch happens with a button",
+    "tag": "LoginSignupPage",
+    "stack": "angular",
+    "type": "angular-ui-lib",
+    "automation_conf": [
+        {
+            "event_type": "create-angular-component",
+            "component_name": "ui-lib/loginsignupsimpletheme"
+        },
+        {
+            "files": [
+                {
+                    "out_path": "src/app/ui-lib/loginsignupsimpletheme/loginsignupsimpletheme.component.ts",
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/loginsignupsimpletheme/loginsignupsimpletheme.component.ts"
+                },
+                {
+                    "out_path": "src/app/ui-lib/loginsignupsimpletheme/loginsignupsimpletheme.component.html",
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/loginsignupsimpletheme/loginsignupsimpletheme.component.html"
+                },
+                {
+                    "out_path": "src/app/ui-lib/loginsignupsimpletheme/loginsignupsimpletheme.component.css",
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/loginsignupsimpletheme/loginsignupsimpletheme.component.css"
+                }
+            ],
+            "event_type": "download-files"
+        }
+    ],
+    "dependencies": [
+        "bootstrap-5"
+    ],
+    "readme": "",
+    "is_active": false,
+    "created_on": "2022-06-24T12:50:34.433036Z",
+    "updated_on": "2022-08-10T09:21:48.338482Z"
+}
