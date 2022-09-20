@@ -82,7 +82,7 @@
               </div>
               <div id="code-{{i}}" class="container tab-pane" [class.active]="gallery.app_image === ''"><br>
                 <h3>Code</h3>
-                <pre>jennie {{gallery.stack}}<span *ngIf="type_automation === 'angular-ui-lib'">ui-lib</span><span *ngIf="type_automation === 'angular-automations'">automations</span> <span *ngIf="type_automation === 'django-automations'">automations</span> download {{gallery.app_name}}</pre>
+                <pre>jennie {{gallery.stack}} <span *ngIf="type_automation === 'angular-ui-lib'">ui-lib</span><span *ngIf="type_automation === 'angular-automations'">automations</span><span *ngIf="type_automation === 'django-automations'">automations</span> download {{gallery.app_name}}</pre>
                 <span *ngIf="type_automation === 'angular-ui-lib'">
                   <p><br><br> Make sure the command is executed inside from angular project, once the command is
                     finished user shall find the module at src/app/ui-lib/{{gallery.app_name}}. The component can be
