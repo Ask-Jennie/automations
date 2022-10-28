@@ -14,7 +14,7 @@ export class GoogleAuthComponent implements OnInit {
   }
 
   callback(response:any) {
-    console.log(response);
+    var response = response;
   }
 
 }
