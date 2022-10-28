@@ -21,6 +21,8 @@ import { GuideSidbarComponent } from './ui-lib/guide-sidbar/guide-sidbar.compone
 import { MegaMenuSidebarComponent } from './ui-lib/mega-menu-sidebar/mega-menu-sidebar.component';
 import { LoginsignupsimplethemeComponent } from './ui-lib/loginsignupsimpletheme/loginsignupsimpletheme.component';
 import { ProductCardComponent } from './ui-lib/product-card/product-card.component';
+import { GloginComponent } from './glogin/glogin.component';
+import { GoogleAuthComponent } from './google-auth/google-auth.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { ProductCardComponent } from './ui-lib/product-card/product-card.compone
     MegaMenuSidebarComponent,
     LoginsignupsimplethemeComponent,
     ProductCardComponent,
+    GloginComponent,
+    GoogleAuthComponent,
   ],
   imports: [
     NgxPaginationModule,
