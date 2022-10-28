@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { SessionmanagerService } from 'src/app/services/sessionmanager.service';
+declare var window: any;
 
 @Component({
   selector: 'app-glogin',
