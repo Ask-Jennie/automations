@@ -12,7 +12,13 @@ export class GloginComponent implements OnInit {
   login_password = "";
 
   error_msg = "";
-  constructor(private session:SessionmanagerService) { }
+  constructor(private session:SessionmanagerService) { 
+    window["load_google_auth"](this.callback, "google-auth-btn", "1056792203955-kghc5agsvk4ufd7h7ebu09re5cvtorts.apps.googleusercontent.com");
+  }
+
+  callback(response:any) {
+    console.log(response);
+  }
 
   ngOnInit(): void {
   }
