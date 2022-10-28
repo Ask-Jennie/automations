@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'guide', component:GuideComponent, canActivate: [AuthGuard] },
   { path: '',   redirectTo: '/automation', pathMatch: 'full' },
   { path: 'login',   component: LoginComponent },
-  { path: 'adsfsdfas',   component: GloginComponent },
+  { path: '1',   component: GloginComponent },
   { path: 'signup',   component: SignupComponent },
 ];
 

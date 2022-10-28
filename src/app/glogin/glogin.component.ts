@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { SessionmanagerService } from 'src/app/services/sessionmanager.service';
 declare var window: any;
-
+declare var response:any;
 @Component({
   selector: 'app-glogin',
   templateUrl: './glogin.component.html',
@@ -17,7 +17,8 @@ export class GloginComponent implements OnInit {
     
   }
 
-  callback(response:any) {
+  callback(resp:any) {
+    response = resp;
     console.log(response);
   }
 
