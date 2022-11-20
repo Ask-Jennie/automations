@@ -22,6 +22,7 @@ const routes: Routes = [
   { path: 'guide', component:GuideComponent, canActivate: [AuthGuard] },
   { path: '',   redirectTo: '/automation', pathMatch: 'full' },
   { path: 'continue',  component: ContinueWithGoogleComponent },
+  { path: 'login',  redirectTo: "continue" },
   { path: 'signup',   component: SignupComponent },
 ];
 
