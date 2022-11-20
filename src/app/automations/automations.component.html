@@ -1,0 +1,63 @@
+<br><br><br><br>
+<div class="main-content container">
+  <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
+  <section class="card-content row" *ngFor="let gallery of ui_gallery | paginate: 
+  { itemsPerPage: 7, currentPage: p };  let i = index ">
+    <div class="container lg-card">
+        <div class="row" *ngIf="gallery.app_image !== ''">
+          <div class="col-md-5">
+            <div class="container tab-pane active component-img"><br>
+              <img class="ui-lib-image" [src]="gallery.app_image">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h4 class="fw-bold pt-5">{{gallery.app_title}}</h4>
+            <p>{{gallery.app_description}}</p>
+            <pre>{{gallery.code}}</pre>
+            <div *ngIf="gallery.type == 'angular-ui-lib'">
+              <p>Integrate in html</p>
+              <pre>&lt;app-{{gallery.app_name}}&gt;&lt;/app-{{gallery.app_name}}&gt;</pre>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <span class="badge rounded-pill jennie-badge">
+                  <span style="color: red;margin-right: 3px;"><i class="fab fa-uikit"></i></span>{{gallery.type}}
+                </span>
+                <span class="badge rounded-pill jennie-badge">
+                  <span style="color: #806cf9;margin-right: 3px;"><i class="fas fa-tags"></i></span>{{gallery.tag}}
+                </span>
+              </div>
+              <div class="col-md-6">
+                <p class="author"><b>Updated By:</b> {{gallery.created_by.fullname}}</p>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="row" *ngIf="gallery.app_image === ''">
+          <div class="col-md-12" style="padding-left:20px;padding-right:20px">
+            <h4 class="fw-bold pt-5">{{gallery.app_title}}</h4>
+            <p>{{gallery.app_description}}</p>
+            <pre>{{gallery.code}}</pre>
+            <div *ngIf="gallery.type == 'angular-ui-lib'">
+              <p>Integrate in html</p>
+              <pre>&lt;app-{{gallery.app_name}}&gt;&lt;/app-{{gallery.app_name}}&gt;</pre>
+            </div>            
+            <div class="row">
+              <div class="col-md-6">
+                <span class="badge rounded-pill jennie-badge">
+                  <span style="color: red;margin-right: 3px;"><i class="fab fa-uikit"></i></span>{{gallery.type}}
+                </span>
+                <span class="badge rounded-pill jennie-badge">
+                  <span style="color: #806cf9;margin-right: 3px;"><i class="fas fa-tags"></i></span>{{gallery.tag}}
+                </span>
+              </div>
+              <div class="col-md-6">
+                <p class="author"><b>Updated By:</b> {{gallery.created_by.fullname}}</p>
+              </div>
+          </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
+</div>

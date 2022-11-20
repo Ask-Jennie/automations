@@ -17,6 +17,16 @@ export class ProfileComponent implements OnInit {
   automations: any;
   constructor(private http: HttpClient, private session:SessionmanagerService, private service: ServiceService) { }
   
+  get_count_name(count) {
+    console.log(count);
+    return count.type;
+  }
+
+  get_counts(count)
+  {
+    console.log(count);
+    return count.count;
+  }
   ngOnInit(): void {
     this.session.getProfileData().subscribe(data => {
       console.log("profile data -->", data);

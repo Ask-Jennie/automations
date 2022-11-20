@@ -5,10 +5,18 @@
     </div>
     <div class="col-lg-9">
         <section class="guide-card" *ngIf="link_to_show != ''">
+            <br>
             <markdown
                 clipboard
                 [src]="link_to_show">
             </markdown>
+            
+            <div *ngIf="link_to_show.split('?')[0] === 'https://raw.githubusercontent.com/Ask-Jennie/ask-jennie/master/tutorials/getting-started/Installing-Jennie.md'">
+                <h1>
+                    Application Key
+                </h1>
+                <pre id="app-key"></pre>
+            </div>
         </section>
     </div>
 </div>

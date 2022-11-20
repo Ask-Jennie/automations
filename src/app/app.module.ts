@@ -25,6 +25,7 @@ import { GloginComponent } from './glogin/glogin.component';
 import { GoogleAuthComponent } from './google-auth/google-auth.component';
 import { VerifyemailComponent } from './verifyemail/verifyemail.component';
 import { ContinueWithGoogleComponent } from './continue-with-google/continue-with-google.component';
+import { AutomationsComponent } from './automations/automations.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { ContinueWithGoogleComponent } from './continue-with-google/continue-wit
     GoogleAuthComponent,
     VerifyemailComponent,
     ContinueWithGoogleComponent,
+    AutomationsComponent,
   ],
   imports: [
     NgxPaginationModule,

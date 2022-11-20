@@ -61,7 +61,7 @@ export class SessionmanagerService {
     let userId = JSON.parse(storage_info)["_id"];
     let token = JSON.parse(storage_info)["token"];
     const headers = { 'token': token};
-   return this.api.get<any>(this.PROFILE_ENDPOINT + "?id=" + userId, { headers });
+    return this.api.get<any>(this.PROFILE_ENDPOINT + "?id=" + userId, { headers });
   }
 
   send_feedback(inputData) {
@@ -72,6 +72,16 @@ export class SessionmanagerService {
   get_turoails() {
     const headers = this.get_auth_header();
     return this.api.get<any>(this.TUTORIALS_ENDPOINT, { headers });
+  }
+
+  loginviagoogle(json) {
+    return this.api.post("https://api.ask-jennie.com/v1/continue-with-google/", json);
+  }
+
+  get_saved_profile_data() {
+    let storage_info = localStorage.getItem(this.STORAGE_KEY);
+    let userInfo = JSON.parse(storage_info)
+    return userInfo;
   }
 
 }

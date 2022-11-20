@@ -18,7 +18,7 @@ export class AppComponent {
 
   logout() {
     this.session.remove_login_info();
-    window.location.href = "/login"
+    window.location.href = "/continue"
   }
 
   do_show_nav() {

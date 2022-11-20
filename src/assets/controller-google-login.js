@@ -10,8 +10,6 @@ function loadGoogleScript()
     script.defer = true
     script.onload = function() {
         window["load_google_auth"] = load_google_auth;
-        console.log("Script Loadded");
-        console.log(window["load_google_auth"]);
         script_load_status = true;
     };
 
@@ -19,17 +17,20 @@ function loadGoogleScript()
     head.appendChild(script);
 }
 
-function load_google_auth(callback, button_id, client_id) {
+function load_google_auth(callback, button_id, client_id, obj) {
     if (!script_load_status) {
-        console.log("Wait before loading ....");
         setTimeout(() =>{
-            load_google_auth(callback, button_id)
+            load_google_auth(callback, button_id, client_id, obj)
         }, 100);        
     } else {
-        console.log("Loaded Continue");
+        
+        var currentObj = obj;
         google.accounts.id.initialize({
             client_id: client_id,
-            callback: callback
+            callback: function(resp) {
+                console.log(obj);
+                callback(resp, currentObj)
+            }
         });
     
         google.accounts.id.renderButton(

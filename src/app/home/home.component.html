@@ -44,7 +44,6 @@
     <div class="col-md-9 pt-5">
       <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
       <div class="main-content">
-        
         <section class="card-content" *ngFor="let gallery of ui_gallery | paginate: 
         { itemsPerPage: 7, currentPage: p };  let i = index ">
           <div class="container lg-card">

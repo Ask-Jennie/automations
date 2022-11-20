@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AutomationsComponent } from './automations/automations.component';
+import { ContinueWithGoogleComponent } from './continue-with-google/continue-with-google.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { GloginComponent } from './glogin/glogin.component';
 import { GoogleAuthComponent } from './google-auth/google-auth.component';
@@ -14,12 +16,13 @@ import { SignupsuccessComponent } from './signupsuccess/signupsuccess.component'
 const routes: Routes = [
   { path: 'signup-success', component: SignupsuccessComponent},
   { path: 'automation', component: HomeComponent, canActivate: [AuthGuard] },
+  { path: 'automations', component: AutomationsComponent, canActivate: [AuthGuard] },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
   { path: 'feedback', component: FeedbackComponent, canActivate: [AuthGuard] },
   { path: 'guide', component:GuideComponent, canActivate: [AuthGuard] },
   { path: '',   redirectTo: '/automation', pathMatch: 'full' },
   { path: 'login',   component: LoginComponent },
-  { path: 'continue',   component: GoogleAuthComponent },
+  { path: 'continue',   component: ContinueWithGoogleComponent },
   { path: 'signup',   component: SignupComponent },
 ];
 

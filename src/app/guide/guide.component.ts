@@ -27,9 +27,24 @@ export class GuideComponent implements OnInit {
         this.show_readme(this.guidemap[0]["readme_link"]);
       }
     )
+    
   }
 
   show_readme(event) {
     this.link_to_show = event;
+    try {     
+      let profile_data = this.sessions.get_saved_profile_data(); 
+      console.log(profile_data)
+      set_key(profile_data["key"]);
+    } catch (e) {
+      console.log(e);
+    }
   }
+}
+
+function set_key(APP_KEY) {
+  setTimeout(() => {
+    document.getElementById("app-key").innerHTML = APP_KEY
+    console.log("Setting APP Key", APP_KEY);
+  }, 500)
 }
