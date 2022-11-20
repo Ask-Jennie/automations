@@ -7,7 +7,7 @@ import { SessionmanagerService } from '../services/sessionmanager.service';
   styleUrls: ['./continue-with-google.component.css']
 })
 export class ContinueWithGoogleComponent implements OnInit {
-  GoogleClientID = "1056792203955-5r2bfmjrplruidvodv89ntiq3k8ge8h5.apps.googleusercontent.com";
+  GoogleClientID = "1056792203955-kghc5agsvk4ufd7h7ebu09re5cvtorts.apps.googleusercontent.com";
   constructor(private api: SessionmanagerService) {
     if (this.api.is_logged_in()) {
       window.location.href = "/";
