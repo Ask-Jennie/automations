@@ -8,6 +8,9 @@ import { SessionmanagerService } from './services/sessionmanager.service';
 })
 export class AppComponent {
   title = 'automations';
+  skip_urls = [
+    "continue", "login", "signup", "signup-success"
+  ]
 
   constructor(private session:SessionmanagerService) {
     
@@ -20,7 +23,8 @@ export class AppComponent {
 
   do_show_nav() {
     let loc_arr = window.location.href.split('/');
-    if (loc_arr[loc_arr.length -1] === "login" || loc_arr[loc_arr.length -1] === "signup" || loc_arr[loc_arr.length -1] === "signup-success") {
+    let sub_url = loc_arr[loc_arr.length -1];
+    if (this.skip_urls.indexOf(sub_url) !== -1) {
       return false;
     }
 

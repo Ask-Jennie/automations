@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { GloginComponent } from './glogin/glogin.component';
+import { GoogleAuthComponent } from './google-auth/google-auth.component';
 import { GuideComponent } from './guide/guide.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -18,7 +19,7 @@ const routes: Routes = [
   { path: 'guide', component:GuideComponent, canActivate: [AuthGuard] },
   { path: '',   redirectTo: '/automation', pathMatch: 'full' },
   { path: 'login',   component: LoginComponent },
-  { path: '2',   component: GloginComponent },
+  { path: 'continue',   component: GoogleAuthComponent },
   { path: 'signup',   component: SignupComponent },
 ];
 

@@ -49,7 +49,7 @@ export class SigninWithImgComponent implements OnInit {
         window.location.href = "/";
       },
       error=> {
-        if(error.error.message) {
+        if(error.error.message === "Sit Back and Relax, while we review your signup application") {
           this.show_error_msg(error.error.message);
         }
         // 

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 declare var window: any;
-declare var response:any;
 @Component({
   selector: 'app-google-auth',
   templateUrl: './google-auth.component.html',
@@ -14,8 +13,8 @@ export class GoogleAuthComponent implements OnInit {
     window["load_google_auth"](this.callback, "google-auth-btn", "1056792203955-kghc5agsvk4ufd7h7ebu09re5cvtorts.apps.googleusercontent.com");
   }
 
-  callback(resp:any) {
-    response = resp;
+  callback(response:any) {
+    console.log(response);
   }
 
 }

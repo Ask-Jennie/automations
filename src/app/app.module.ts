@@ -23,6 +23,8 @@ import { LoginsignupsimplethemeComponent } from './ui-lib/loginsignupsimpletheme
 import { ProductCardComponent } from './ui-lib/product-card/product-card.component';
 import { GloginComponent } from './glogin/glogin.component';
 import { GoogleAuthComponent } from './google-auth/google-auth.component';
+import { VerifyemailComponent } from './verifyemail/verifyemail.component';
+import { ContinueWithGoogleComponent } from './continue-with-google/continue-with-google.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { GoogleAuthComponent } from './google-auth/google-auth.component';
     ProductCardComponent,
     GloginComponent,
     GoogleAuthComponent,
+    VerifyemailComponent,
+    ContinueWithGoogleComponent,
   ],
   imports: [
     NgxPaginationModule,

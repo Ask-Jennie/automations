@@ -21,10 +21,12 @@ function loadGoogleScript()
 
 function load_google_auth(callback, button_id, client_id) {
     if (!script_load_status) {
+        console.log("Wait before loading ....");
         setTimeout(() =>{
             load_google_auth(callback, button_id)
         }, 100);        
     } else {
+        console.log("Loaded Continue");
         google.accounts.id.initialize({
             client_id: client_id,
             callback: callback
